@@ -1,0 +1,1220 @@
+Date: Wed, 25 Feb 2026 15:12:46 +0100 (CET)
+Message-ID: <724959678.5.1772028766875@bthconfluence.aimsites.nl>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_4_894167944.1772028766875"
+
+------=_Part_4_894167944.1772028766875
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Het onderzoeksplan</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-link-pressed, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Het onderzoeksplan</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+ <table class=3D"relative-table wrapped confluenceTable" style=3D"width: 21=
+.7844%;">
+  <colgroup>
+   <col style=3D"width: 54.43%;">
+   <col style=3D"width: 45.5887%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th class=3D"highlight-#ff8b00 confluenceTh" title=3D"Achtergrondkleur:=
+ Donkeroranje 100%" data-highlight-colour=3D"#ff8b00"><span style=3D"color:=
+#ffffff;">Deelnemers</span></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" title=3D"Achtergrondkleur:=
+ Donkeroranje 100%" data-highlight-colour=3D"#ff8b00"><span style=3D"color:=
+#ffffff;">Studentnummer</span></th>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Tessa Schuiteman</td>
+    <td style=3D"text-align: left;" class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">1657949</span></p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Dylan Bouwmans</td>
+    <td style=3D"text-align: left;" class=3D"confluenceTd"><span style=3D"c=
+olor:#172b4d;">1680974</span></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Dani=C3=ABl Hardenbol</td>
+    <td style=3D"text-align: left;" class=3D"confluenceTd">1666028</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Jeroen Bruggeman</td>
+    <td style=3D"text-align: left;" class=3D"confluenceTd">1650817</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Mike van Rijsewijk</td>
+    <td style=3D"text-align: left;" class=3D"confluenceTd">1608352</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Remco Thijssen</td>
+    <td style=3D"text-align: left;" class=3D"confluenceTd"><span>1673484</s=
+pan></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><a href=3D"https://bthconfluence.aimsites.nl/display/C2GAT/Het+onderzoek=
+splan" rel=3D"nofollow">https://bthconfluence.aimsites.nl/display/C2GAT/Het=
++onderzoeksplan</a></p>
+<p><br></p>
+<p><strong>Versiebeheer</strong></p>
+<div class=3D"table-wrap">
+ <table class=3D"wrapped relative-table confluenceTable" style=3D"width: 53=
+.4284%;">
+  <colgroup>
+   <col style=3D"width: 9.3483%;">
+   <col style=3D"width: 15.8202%;">
+   <col style=3D"width: 13.5587%;">
+   <col style=3D"width: 22.703%;">
+   <col style=3D"width: 38.6259%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th class=3D"highlight-#ff8b00 confluenceTh" title=3D"Achtergrondkleur:=
+ Donkeroranje 100%" data-highlight-colour=3D"#ff8b00"><span style=3D"color:=
+#ffffff;">Versie</span></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" title=3D"Achtergrondkleur:=
+ Donkeroranje 100%" data-highlight-colour=3D"#ff8b00"><span style=3D"color:=
+#ffffff;">Datum</span></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" title=3D"Achtergrondkleur:=
+ Donkeroranje 100%" data-highlight-colour=3D"#ff8b00"><span style=3D"color:=
+#ffffff;">Status</span></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" title=3D"Achtergrondkleur:=
+ Donkeroranje 100%" data-highlight-colour=3D"#ff8b00"><span style=3D"color:=
+#ffffff;">Auteur</span></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" title=3D"Achtergrondkleur:=
+ Donkeroranje 100%" data-highlight-colour=3D"#ff8b00"><span style=3D"color:=
+#ffffff;">Omschrijving</span></th>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Leading Concept</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Concept</td>
+    <td class=3D"confluenceTd">Daniel Hardenbol</td>
+    <td class=3D"confluenceTd">
+     <p>opzetten eerste conceptplan</p>
+     <p>Uitwerken hoofdstukken 1, 2 &amp; 3&nbsp;</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">0.1</td>
+    <td class=3D"confluenceTd">4 maart 2024</td>
+    <td class=3D"confluenceTd">Concept</td>
+    <td class=3D"confluenceTd">Remco Thijssen</td>
+    <td class=3D"confluenceTd">Initieel document</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">1.0</td>
+    <td class=3D"confluenceTd">7-3-2024</td>
+    <td class=3D"confluenceTd">Concept</td>
+    <td class=3D"confluenceTd">Tessa, Mike en Dylan</td>
+    <td class=3D"confluenceTd">Aanleiding, hoofdvraag en deelvragen</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">1.1</td>
+    <td class=3D"confluenceTd">16-3-2024</td>
+    <td class=3D"confluenceTd">Concept</td>
+    <td class=3D"confluenceTd">Remco</td>
+    <td class=3D"confluenceTd">Opzet van finale versie gemaakt aan de hand =
+van de 2 opgezette concepten.</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">1.2</td>
+    <td class=3D"confluenceTd">17-3-2024</td>
+    <td class=3D"confluenceTd">Concept</td>
+    <td class=3D"confluenceTd">Jeroen, Tessa en Remco</td>
+    <td class=3D"confluenceTd">Aanpassen hoofd en deelvragen</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">1.3</td>
+    <td class=3D"confluenceTd">19-3-2024</td>
+    <td class=3D"confluenceTd">Concept</td>
+    <td class=3D"confluenceTd">Tessa / Daniel</td>
+    <td class=3D"confluenceTd">
+     <p>Tessa: deelvragen methode, onderzoeksruimte, waarom (vraag 3 &amp; =
+4, 5)&nbsp;</p>
+     <p>Daniel: deelvragen methode, onderzoeksruimte, waarom (vraag 1 &amp;=
+ 2)</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">1.4</td>
+    <td class=3D"confluenceTd">20-03-2024</td>
+    <td class=3D"confluenceTd">Concept</td>
+    <td class=3D"confluenceTd">Jeroen Bruggeman</td>
+    <td class=3D"confluenceTd">
+     <p>Uitwerken vraag 6 en 7</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2.0</td>
+    <td class=3D"confluenceTd">21-3-2024</td>
+    <td class=3D"confluenceTd">Definitief concept</td>
+    <td class=3D"confluenceTd">Iedereen</td>
+    <td class=3D"confluenceTd">
+     <p>Vragen nogmaals doorlopen en aanpassingen doorgevoerd.</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2.1</td>
+    <td class=3D"confluenceTd">23-3-2024</td>
+    <td class=3D"confluenceTd">Definitief concept</td>
+    <td class=3D"confluenceTd">
+     <p>Remco Thijssen</p>
+     <p>Daniel Hardenbol</p></td>
+    <td class=3D"confluenceTd">
+     <p>Theoretisch kader verder uitgewerkt.</p>
+     <p>Theoretisch kader aangevuld</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2.2</td>
+    <td class=3D"confluenceTd">26-03-2024</td>
+    <td class=3D"confluenceTd">Definitief concept</td>
+    <td class=3D"confluenceTd">Jeroen Bruggeman</td>
+    <td class=3D"confluenceTd">
+     <p>Aanvullen theoretisch kader</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2.3</td>
+    <td class=3D"confluenceTd">28-03-24</td>
+    <td class=3D"confluenceTd">Definitief concept</td>
+    <td class=3D"confluenceTd">Tessa Schuiteman</td>
+    <td class=3D"confluenceTd">
+     <p>Aanvullen deelvraag 3 en bron</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2.4</td>
+    <td class=3D"confluenceTd">28-03-24</td>
+    <td class=3D"confluenceTd">Definitief concept</td>
+    <td class=3D"confluenceTd">Mike van Rijsewijk</td>
+    <td class=3D"confluenceTd">
+     <p>Aanvullen theoretisch kader</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2.5</td>
+    <td class=3D"confluenceTd">28-03-24</td>
+    <td class=3D"confluenceTd">Definitief concept</td>
+    <td class=3D"confluenceTd">Remco en Jeroen</td>
+    <td class=3D"confluenceTd">
+     <p>Aanvullen en aanpassen aanleiding, kans, doelstellingen en doelgroe=
+pen</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2.6</td>
+    <td class=3D"confluenceTd">28-03-24</td>
+    <td class=3D"confluenceTd">
+     <p>Definitief concept</p></td>
+    <td class=3D"confluenceTd">Daniel Hardenbol</td>
+    <td class=3D"confluenceTd">
+     <p>Laatste aanpassing ontwerpvraag / aanpassen bronvermelding.</p>
+     <p>Als kartrekker laatste controle en besluitvorming omtrent afronding=
+.&nbsp;</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2.7</td>
+    <td class=3D"confluenceTd">18-4-24</td>
+    <td class=3D"confluenceTd">
+     <p>definitief concept</p></td>
+    <td class=3D"confluenceTd">Dylan Bouwmans</td>
+    <td class=3D"confluenceTd">
+     <p>Hoofdvraag aangepast na inzichten van sprint review</p></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<p>
+ <style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1772028766795 {padding: 0px;}
+div.rbtoc1772028766795 ul {margin-left: 0px;}
+div.rbtoc1772028766795 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1772028766795">
+ <ul class=3D"toc-indentation">
+  <li><a href=3D"#Hetonderzoeksplan-Doelstellingenendoelgroepen">Doelstelli=
+ngen en doelgroepen</a>
+   <ul class=3D"toc-indentation">
+    <li><a href=3D"#Hetonderzoeksplan-Aanleiding">Aanleiding</a></li>
+    <li><a href=3D"#Hetonderzoeksplan-Kansen">Kansen</a></li>
+    <li><a href=3D"#Hetonderzoeksplan-Doelstelling">Doelstelling</a></li>
+    <li><a href=3D"#Hetonderzoeksplan-Doelgroep">Doelgroep</a></li>
+    <li><a href=3D"#Hetonderzoeksplan-Opdracht">Opdracht</a></li>
+   </ul></li>
+  <li><a href=3D"#Hetonderzoeksplan-Theoretischkader">Theoretisch kader</a>=
+</li>
+  <li><a href=3D"#Hetonderzoeksplan-Onderzoeksvragen">Onderzoeksvragen</a>
+   <ul class=3D"toc-indentation">
+    <li><a href=3D"#Hetonderzoeksplan-Hoofdvraag">Hoofdvraag</a></li>
+    <li><a href=3D"#Hetonderzoeksplan-Deelvragen">Deelvragen</a></li>
+   </ul></li>
+  <li><a href=3D"#Hetonderzoeksplan-Planning">Planning</a></li>
+  <li><a href=3D"#Hetonderzoeksplan-Literatuurlijst">Literatuurlijst</a></l=
+i>
+ </ul>
+</div>
+<p></p>
+<h1 id=3D"Hetonderzoeksplan-Doelstellingenendoelgroepen">Doelstellingen en =
+doelgroepen</h1>
+<p></p>
+<h2 id=3D"Hetonderzoeksplan-Aanleiding">Aanleiding</h2>
+<p>In opdracht van&nbsp;<span class=3D"TextRun SCXW46697943 BCX0" style=3D"=
+color:#172b4d;"><span class=3D"NormalTextRun SCXW46697943 BCX0">Lectoraat M=
+edia Design</span></span> is onderzocht hoe generatieve A.I. kan worden ing=
+ezet om ontwerpers te ondersteunen in hun creatieve proces. De oorspronkeli=
+jke vraag was om een digitale tool te ontwikkelen die ontwerpers en generat=
+ieve A.I. samen laat brainstormen.</p>
+<p>Uit interviews met digital designers bleek echter dat dit niet hun prima=
+ire behoefte is. Wel gaven de designers aan dat ze generatieve A.I. waardev=
+ol vinden als ondersteunende tool. Dit heeft geleid tot een nieuwe onderzoe=
+ksrichting, die zich richt op de verrijking van het ontwerpproces met onder=
+steuning van generatieve A.I.. Met behulp van dit onderzoeksplan wordt deze=
+ richting verder onderzocht.</p>
+<h2 id=3D"Hetonderzoeksplan-Kansen">Kansen</h2>
+<p>De opkomst van generatieve A.I. biedt innovatieve kansen. Het biedt niet=
+ alleen aanzienlijke snelheidsverbeteringen in ontwerpprocessen, maar ook e=
+en verhoogde creatieve output. Met geavanceerde kunstmatige intelligentie-a=
+lgoritmen kunnen ontwerpers sneller en effici=C3=ABnter werken, terwijl ze =
+tegelijkertijd nieuwe deuren openen naar grensverleggende creativiteit. De =
+integratie van generatieve A.I. markeert een revolutie in digital design, w=
+aarbij technologische vooruitgang en artistieke expressie naadloos samenkom=
+en. Deze ontwikkeling biedt boeiende mogelijkheden voor verder onderzoek na=
+ar de impact van generatieve A.I. op creatieve processen en ontwerppraktijk=
+en.</p>
+<h2 id=3D"Hetonderzoeksplan-Doelstelling">Doelstelling</h2>
+<p><span style=3D"color:#172b4d;">Dit onderzoek beoogt een generatief A.I.-=
+model te integreren in het ontwerpproces, met als doel digital designers te=
+ ondersteunen, het proces te versnellen en hun creatieve capaciteiten te ve=
+rsterken. Hierbij ligt de nadruk op het behouden van eigenaarschap en veran=
+twoordelijkheid.</span></p>
+<h2 id=3D"Hetonderzoeksplan-Doelgroep">Doelgroep</h2>
+<p>Dit onderzoek is gericht op<span> <span style=3D"color:#c25100;"><em>d</=
+em></span></span><span style=3D"color:#c25100;"><em>igital designers die we=
+rkzaam zijn in de creatieve sector.</em></span> Deze doelgroep bestaat uit =
+professionals die regelmatig betrokken zijn bij creatieve processen, waarbi=
+j ze gebruik maken van gestructureerde methoden om tot eindproducten te kom=
+en. Deze Digital Designers zijn verantwoordelijk voor het cre=C3=ABren van =
+diverse digitale ontwerpen, zoals websites, apps, grafische ontwerpen, en a=
+ndere digitale content. Hun dagelijkse werkzaamheden omvatten het genereren=
+ van idee=C3=ABn, het ontwikkelen van concepten, het maken van prototypes e=
+n het iteratief verbeteren van hun ontwerpen. Ze zijn bekend met het gebrui=
+k van verschillende tools en technologie=C3=ABn om hun creatieve visie te r=
+ealiseren en streven naar innovatie en effectieve oplossingen binnen hun va=
+kgebied.&nbsp;</p>
+<h2 id=3D"Hetonderzoeksplan-Opdracht">Opdracht</h2>
+<p><span style=3D"color:#702e00;">Verbeter het ontwerpproces waarmee je dig=
+ital designers in een context van deze casus tot een ontwerp komen met eige=
+naarschap en verantwoordelijkheid.&nbsp;</span></p>
+<p><br></p>
+<br>
+<p></p>
+<h1 id=3D"Hetonderzoeksplan-Theoretischkader">Theoretisch kader</h1>
+<p></p>
+<p>In het theoretische kader wordt beschreven welke definitie wij gebruiken=
+ van bepaalde termen.&nbsp;</p>
+<div class=3D"table-wrap">
+ <table class=3D"relative-table wrapped confluenceTable" style=3D"width: 86=
+.3806%;">
+  <colgroup class=3D"">
+   <col class=3D"" style=3D"width: 11.5914%;">
+   <col class=3D"" style=3D"width: 13.0924%;">
+   <col class=3D"" style=3D"width: 75.2296%;">
+  </colgroup>
+  <tbody class=3D"">
+   <tr class=3D"">
+    <th class=3D"highlight-#ff8b00 confluenceTh" data-highlight-colour=3D"#=
+ff8b00"><span style=3D"color:#ffffff;">Begrip</span></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" data-highlight-colour=3D"#=
+ff8b00"><span style=3D"color:#ffffff;">Definitie</span></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" data-highlight-colour=3D"#=
+ff8b00"><span style=3D"color:#ffffff;">Bron</span></th>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">Creativiteit</td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+37471f;">Creativiteit is het vermogen om nieuwe dingen te bedenken en/of te=
+ cre=C3=ABren. Door creatief denken kun je originele oplossingen en vernieu=
+wende werkwijzen uitdenken. Creativiteit kan betrekking hebben op het denke=
+n of op het doen.</span></td>
+    <td style=3D"text-align: left;" class=3D"confluenceTd"><em style=3D"tex=
+t-decoration: none;">Creativiteit - Uitleg begrip creatief</em><span style=
+=3D"text-decoration: none;color:#172b4d;">. (z.d.). </span><span class=3D"u=
+rl" style=3D"text-decoration: none;color:#172b4d;"><a class=3D"external-lin=
+k" href=3D"https://wij-leren.nl/creativiteit.php#:~:text=3DCreativiteit%20i=
+s%20het%20vermogen%20om,denken%20of%20op%20het%20doen" rel=3D"nofollow">htt=
+ps://wij-leren.nl/creativiteit.php#:~:text=3DCreativiteit%20is%20het%20verm=
+ogen%20om,denken%20of%20op%20het%20doen</a>.</span></td>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">Eigenaarschap</td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+172b4d;">Eigenaarschap betekent dat je je verantwoordelijk voelt =C3=A9n da=
+t je je verantwoordelijkheid neemt. Je legt dan ook rekenschap af. Het is v=
+an jou, jij staat ervoor. Als het goed gaat, mag je trots zijn en als het m=
+isgaat, neem je je verlies en ga je nieuwe acties inzetten om eventuele fou=
+ten te herstellen of om ervan te leren.</span></td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+172b4d;">Talentontwikkeling. (2024, 11 februari). </span><em style=3D"text-=
+decoration: none;">Wat is Eigenaarschap - Talentontwikkeling</em><span styl=
+e=3D"text-decoration: none;color:#172b4d;">. </span><span class=3D"url" sty=
+le=3D"text-decoration: none;color:#172b4d;"><a class=3D"external-link" href=
+=3D"https://www.talentontwikkeling.com/blog/wat-is-eigenaarschap/#:~:text=
+=3DAls%20we%20teruggaan%20naar%20de,dat%20je%20je%20verantwoordelijkheid%20=
+neemt" rel=3D"nofollow">https://www.talentontwikkeling.com/blog/wat-is-eige=
+naarschap/#:~:text=3DAls%20we%20teruggaan%20naar%20de,dat%20je%20je%20veran=
+twoordelijkheid%20neemt</a>.</span></td>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">Generatieve AI</td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+172b4d;">Generatieve AI, een tak van kunstmatige intelligentie die zich ric=
+ht op het genereren van nieuwe inhoud, zoals afbeeldingen, muziek en tekst,=
+ is gebaseerd op geavanceerde neurale netwerkarchitecturen,. Deze systemen =
+kunnen autonoom nieuwe inhoud cre=C3=ABren door patronen te leren uit grote=
+ datasets en deze vervolgens te gebruiken om originele en overtuigende outp=
+ut te produceren.</span></td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+172b4d;">OpenAI. (z.d.). Generative AI: Models, Techniques, and Application=
+s. Geraadpleegd op 16 maart 2024, van <a class=3D"external-link" href=3D"ht=
+tps://openai.com/generative-ai" rel=3D"nofollow">https://openai.com/generat=
+ive-ai</a></span></td>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">Het ontwerpproces</td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"text-decoration: none;color:#172b4d;">Design Thinkin=
+g</span></p>
+     <p><span style=3D"text-decoration: none;color:#172b4d;"><span style=3D=
+"text-decoration: none;color:#37471f;">Samengevat bestaat het proces voor d=
+esign thinking uit werkelijk diepgaand inzicht in mensen en hun behoeften, =
+analyseren welke problemen je gaat oplossen, bepalen welke concepten je ont=
+werpt om vervolgens herhaaldelijk prototypes te maken en te testen terwijl =
+je echte gebruikersfeedback krijgt</span></span></p></td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+172b4d;">&nbsp;<em style=3D"text-decoration: none;">Adobe</em>. (z.d.).<em =
+style=3D"text-decoration: none;">Design thinking: een beginnersgids. </em>G=
+eraadpleegd op 23 maart 2024, van <span class=3D"url" style=3D"text-decorat=
+ion: none;color:#172b4d;"><a class=3D"external-link" href=3D"https://www.ad=
+obe.com/nl/creativecloud/design/discover/design-thinking.html" rel=3D"nofol=
+low">https://www.adobe.com/nl/creativecloud/design/discover/design-thinking=
+.html</a></span></span></td>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">AI model&nbsp;</td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+172b4d;">&nbsp;Een AI model is een programma welke getraind is om zonder me=
+nselijke ingrepen keuzes te maken gebaseerd op de data die beschikbaar is v=
+oor het model. Door verschillende algoritmes toe te passen op de beschikbar=
+e data kan AI de taak uitvoeren waar deze voor geprogrammeerd is.</span></t=
+d>
+    <td class=3D"confluenceTd">
+     <p><em>What Is an AI Model? | IBM</em>. (z.d.). Geraadpleegd op 27 maa=
+rt 2024, van <span class=3D"url"><a class=3D"external-link" href=3D"https:/=
+/www.ibm.com/topics/ai-model" rel=3D"nofollow">https://www.ibm.com/topics/a=
+i-model</a></span><a class=3D"external-link" href=3D"https://www.ibm.com/to=
+pics/ai-model" rel=3D"nofollow">&nbsp;https://www.ibm.com/topics/ai-model</=
+a></p></td>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">Trainingsmethoden</td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+172b4d;">AI model training is als het leren van een computer. Het is als he=
+t voeden van een computer met veel informatie, zodat het kan leren en slimm=
+e antwoorden kan geven. We geven de computer speciale regels en laten hem o=
+efenen met verschillende situaties. Net zoals we een kind leren om dingen t=
+e herkennen, leren we de computer om patronen te zien en goede beslissingen=
+ te nemen. We geven hem veel verschillende soorten informatie, zodat hij go=
+ed kan leren en problemen kan oplossen. Uiteindelijk willen we dat de compu=
+ter ons helpt met allerlei taken, zoals het voorspellen van trends of het h=
+erkennen van afbeeldingen.</span></td>
+    <td class=3D"confluenceTd">
+     <p>Chen, M. (2023b, december 6).&nbsp;<em>What is AI model training &a=
+mp; why is it important?</em> <span class=3D"url"><a class=3D"external-link=
+" href=3D"https://www.oracle.com/artificial-intelligence/ai-model-training/=
+" rel=3D"nofollow">https://www.oracle.com/artificial-intelligence/ai-model-=
+training/</a></span></p></td>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">Digital designer</td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+172b4d;">Digitaal ontwerp is een veelomvattende term voor alles wat te make=
+n heeft met het cre=C3=ABren van verschillende digitale producten. Het omva=
+t grafisch ontwerp, de gebruikersinterface, de gebruikerservaring en soms f=
+ysieke producten die digitale elementen hebben. Alle lay-outs, knoppen en b=
+edieningspanelen waar je mee werkt, zijn door een professionele ontwerper m=
+et geavanceerde digitale tools gemaakt om jou de ultieme gebruikerservaring=
+ te bieden.</span></td>
+    <td class=3D"confluenceTd">
+     <p><em>Een succesvolle digitaal ontwerper worden | Adobe</em>. (z.d.).=
+ Geraadpleegd op 27 maart 2024, van <span class=3D"url"><a class=3D"externa=
+l-link" href=3D"https://www.adobe.com/nl/creativecloud/design/discover/digi=
+tal-design.html" rel=3D"nofollow">https://www.adobe.com/nl/creativecloud/de=
+sign/discover/digital-design.html</a></span></p>
+     <p><a class=3D"external-link" href=3D"https://www.adobe.com/nl/creativ=
+ecloud/design/discover/digital-design.html" rel=3D"nofollow">https://www.ad=
+obe.com/nl/creativecloud/design/discover/digital-design.html</a></p></td>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">Ethiek</td>
+    <td class=3D"confluenceTd"><span style=3D"text-decoration: none;color:#=
+172b4d;"><span style=3D"color:#172b4d;">Ethiek is de wetenschappelijke of s=
+ystematische studie van de moraal. Anders gezegd is ethiek =E2=80=98kritisc=
+h nadenken over wat (moreel) goed is om te doen=E2=80=99. Van oudsher wordt=
+ de ethiek gezien als een onderdeel van de filosofie. Ethiek en moraal word=
+en vaak door elkaar gebruikt, maar zijn twee verschillende zaken: ethiek be=
+studeert de moraal.</span></span></td>
+    <td class=3D"confluenceTd">
+     <p><em>Ethiek</em>. (2017, 7 april). KNMG. Geraadpleegd op 27 maart 20=
+24, van <span class=3D"url"><a class=3D"external-link" href=3D"https://www.=
+knmg.nl/ik-ben-geneeskundestudent-1/ethische-toolkit/verdiepen/begrippen-2/=
+ethiek-6" rel=3D"nofollow">https://www.knmg.nl/ik-ben-geneeskundestudent-1/=
+ethische-toolkit/verdiepen/begrippen-2/ethiek-6</a></span></p>
+     <p><a class=3D"external-link" href=3D"https://www.knmg.nl/ik-ben-genee=
+skundestudent-1/ethische-toolkit/verdiepen/begrippen-2/ethiek-6" rel=3D"nof=
+ollow">https://www.knmg.nl/ik-ben-geneeskundestudent-1/ethische-toolkit/ver=
+diepen/begrippen-2/ethiek-6</a></p></td>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">AI tool</td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"text-decoration: none;color:#172b4d;">Een AI-tool is=
+ een software applicatie die gebruikmaakt van kunstmatige intelligentie-alg=
+oritmes om specifieke taken uit te voeren en problemen op te lossen. AI-too=
+ls kunnen in allerlei sectoren worden ingezet, van gezondheidszorg en finan=
+ci=C3=ABn tot marketing en onderwijs, om taken te automatiseren, data te an=
+alyseren, idee=C3=ABn te genereren en besluitvorming te verbeteren.</span><=
+/p></td>
+    <td class=3D"confluenceTd">
+     <p><em>What is an AI tool? | Synthesia Glossary</em>. (z.d.). [Video].=
+ Geraadpleegd op 27 maart 2024, van <span class=3D"url"><a class=3D"externa=
+l-link" href=3D"https://www.synthesia.io/glossary/ai-tool#:~:text=3Dan%20AI=
+%20tool%3F-,An%20AI%20tool%20is%20a%20software%20application%20that%20uses%=
+20artificial,%2C%20and%20improve%20decision%2Dmaking" rel=3D"nofollow">http=
+s://www.synthesia.io/glossary/ai-tool#:~:text=3Dan%20AI%20tool%3F-,An%20AI%=
+20tool%20is%20a%20software%20application%20that%20uses%20artificial,%2C%20a=
+nd%20improve%20decision%2Dmaking</a>.</span></p>
+     <p><a class=3D"external-link" href=3D"https://www.synthesia.io/glossar=
+y/ai-tool#:~:text=3Dan%20AI%20tool%3F-,An%20AI%20tool%20is%20a%20software%2=
+0application%20that%20uses%20artificial,%2C%20and%20improve%20decision%2Dma=
+king" rel=3D"nofollow">https://www.synthesia.io/glossary/ai-tool#:~:text=3D=
+an%20AI%20tool%3F-,An%20AI%20tool%20is%20a%20software%20application%20that%=
+20uses%20artificial,%2C%20and%20improve%20decision%2Dmaking</a>.</p></td>
+   </tr>
+   <tr class=3D"">
+    <td class=3D"confluenceTd">Prototype</td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"text-decoration: none;color:#172b4d;">&nbsp;Een prot=
+otype is een vroege versie van een product waarvan de toekomstige versie no=
+g wordt ontwikkeld. Een prototype is bedoeld om twee verschillende dingen t=
+e testen. 1, is de opdrachtgever tevreden met het product dat wordt aangebo=
+den, voldoet het aan verwachtingen. 2, werkt het naar behoren, zijn er geen=
+ bugs of fouten die naar voren blijken te komen bij uitgebreid testen.</spa=
+n></p></td>
+    <td class=3D"confluenceTd">
+     <p>Kirvan, P. (2023, 13 april).&nbsp;<em>prototype</em>. ERP. Geraadpl=
+eegd op 27 maart 2024, van <span class=3D"url"><a class=3D"external-link" h=
+ref=3D"https://www.techtarget.com/searcherp/definition/prototype" rel=3D"no=
+follow">https://www.techtarget.com/searcherp/definition/prototype</a></span=
+></p>
+     <p><a class=3D"external-link" href=3D"https://www.techtarget.com/searc=
+herp/definition/prototype" rel=3D"nofollow">https://www.techtarget.com/sear=
+cherp/definition/prototype</a></p></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<br>
+<p></p>
+<h1 id=3D"Hetonderzoeksplan-Onderzoeksvragen">Onderzoeksvragen</h1>
+<p>Onderzoeksvragen vormen het fundament van elk onderzoek en zijn van cruc=
+iaal belang voor het sturen van het onderzoeksproces en het verkrijgen van =
+waardevolle inzichten. Ze dienen als leidraad voor het formuleren van hypot=
+heses, het bepalen van onderzoeksmethoden en het interpreteren van de resul=
+taten. Door middel van doordachte en gerichte onderzoeksvragen kunnen onder=
+zoekers de focus en relevantie van hun studie versterken, waardoor ze in st=
+aat zijn om specifieke aspecten van een probleemgebied te verkennen en bete=
+kenisvolle bijdragen te leveren aan de bestaande kennis.&nbsp;</p>
+<h2 id=3D"Hetonderzoeksplan-Hoofdvraag">Hoofdvraag</h2>
+<p>Het belang van de hoofdvraag in een onderzoek kan niet worden overschat,=
+ omdat deze de kern vormt van het onderzoeksproces en richting geeft aan al=
+le aspecten ervan. Hieronder staan enkele redenen waarom de hoofdvraag zo c=
+ruciaal is:</p>
+<ol>
+ <li><span><strong>Focus en richting:</strong>&nbsp;</span>De hoofdvraag ge=
+eft richting aan het onderzoek en helpt onderzoekers zich te concentreren o=
+p het specifieke probleemgebied dat ze willen verkennen. Het voorkomt dat h=
+et onderzoek te breed wordt en helpt bij het defini=C3=ABren van de breedte=
+ van de studie.</li>
+ <li><strong>Relevantie:</strong><span>&nbsp;</span>Een goed geformuleerde =
+hoofdvraag zorgt ervoor dat het onderzoek relevant is voor het vakgebied of=
+ de discipline waarin het wordt uitgevoerd. Het helpt onderzoekers bij het =
+identificeren van belangrijke kwesties die moeten worden aangepakt en draag=
+t bij aan de waarde van het onderzoek voor de academische gemeenschap en de=
+ bredere samenleving.</li>
+ <li><strong>Onderzoeksmethoden:</strong><span>&nbsp;</span>De hoofdvraag b=
+e=C3=AFnvloedt de keuze van onderzoeksmethoden die worden gebruikt om het o=
+nderzoek uit te voeren. Het bepaalt welke benaderingen het meest geschikt z=
+ijn om de vraag te beantwoorden en helpt bij het ontwikkelen van een method=
+ologisch kader voor het onderzoek.</li>
+ <li><strong>Analyse en interpretatie:</strong><span>&nbsp;</span>De hoofdv=
+raag leidt de analyse en interpretatie van de onderzoeksresultaten. Het hel=
+pt onderzoekers bij het identificeren van relevante bevindingen en het bean=
+twoorden van de hoofdvraag op basis van de verzamelde gegevens.</li>
+ <li><strong>Bijdrage aan kennis:</strong><span>&nbsp;</span>Door een duide=
+lijke en relevante hoofdvraag te formuleren, kunnen onderzoekers bijdragen =
+aan de bestaande kennis binnen hun vakgebied. Ze kunnen nieuwe&nbsp;inzicht=
+en genereren en praktische oplossingen bieden voor re=C3=ABle problemen.</l=
+i>
+</ol>
+<p><br></p>
+<p><u><strong>De hoofdvraag is als volgt geformuleerd:</strong></u></p>
+<p><span><span class=3D"ui-provider a b c d e f g h i j k l m n o p q r s t=
+ u v w x y z ab ac ae af ag ah ai aj ak"><strong><span style=3D"color:#702e=
+00;"><em><span class=3D"TextRun SCXP120462782 BCX8"><span class=3D"NormalTe=
+xtRun SCXP120462782 BCX8" style=3D"text-decoration: none;">Hoe kan het ontw=
+erpproces van digital designers effici=C3=ABnter worden gemaakt&nbsp;door o=
+ndersteuning van generatieve A.I., waarbij eigenaarschap en&nbsp;verantwoor=
+delijkheid behouden blijft?</span></span></em></span></strong></span></span=
+></p>
+<h2 id=3D"Hetonderzoeksplan-Deelvragen">Deelvragen</h2>
+<p>Erika Hall benadrukt in haar boek "Just Enough Research" (Hall, 2013) he=
+t belang van het formuleren van goede deelvragen als onderdeel van het onde=
+rzoeksproces. Ze stelt dat deelvragen moeten helpen bij het verfijnen en sp=
+ecifieker maken van de hoofdvraag, en moeten dienen als leidraad voor het o=
+nderzoek. Door het stellen van deelvragen kunnen onderzoekers het onderwerp=
+ van hun onderzoek beter begrijpen en gerichter te werk gaan bij het verzam=
+elen van informatie en analyseren van gegevens.</p>
+<p><br></p>
+<p><span style=3D"color:#702e00;"><span class=3D"TextRun SCXP120462782 BCX8=
+"><span class=3D"NormalTextRun SCXP120462782 BCX8" style=3D"text-decoration=
+: none;">Hoe&nbsp;</span></span><span class=3D"TextRun SpellingErrorZoomed =
+SCXP120462782 BCX8"><span class=3D"SCXP120462782 BCX8" style=3D"text-decora=
+tion: none;">kan</span></span><span class=3D"TextRun SCXP120462782 BCX8"><s=
+pan class=3D"NormalTextRun SCXP120462782 BCX8" style=3D"text-decoration: no=
+ne;"> het&nbsp;</span></span></span><span style=3D"color:#702e00;"><span cl=
+ass=3D"TextRun SpellingErrorZoomed SCXP120462782 BCX8"><span class=3D"SCXP1=
+20462782 BCX8" style=3D"text-decoration: none;">ontwerpproces </span></span=
+></span><strong><span style=3D"color:#702e00;"><em><span class=3D"TextRun S=
+pellingErrorZoomed SCXP120462782 BCX8"><span class=3D"SCXP120462782 BCX8" s=
+tyle=3D"text-decoration: none;">(1)</span></span><span class=3D"TextRun SCX=
+P120462782 BCX8"><span class=3D"NormalTextRun SCXP120462782 BCX8" style=3D"=
+text-decoration: none;"> </span></span></em></span></strong><span style=3D"=
+color:#702e00;"><span class=3D"TextRun SCXP120462782 BCX8"><span class=3D"N=
+ormalTextRun SCXP120462782 BCX8" style=3D"text-decoration: none;">van digit=
+al designers effici=C3=ABnter</span></span></span><strong><span style=3D"co=
+lor:#702e00;"><em><span class=3D"TextRun SCXP120462782 BCX8"><span class=3D=
+"NormalTextRun SCXP120462782 BCX8" style=3D"text-decoration: none;"> (2, 3,=
+ 5) </span></span></em></span></strong><span style=3D"color:#702e00;"><span=
+ class=3D"TextRun SCXP120462782 BCX8"><span class=3D"NormalTextRun SCXP1204=
+62782 BCX8" style=3D"text-decoration: none;">worden gemaakt door ondersteun=
+ing</span><span class=3D"NormalTextRun SCXP120462782 BCX8" style=3D"text-de=
+coration: none;">&nbsp;van&nbsp;</span></span><span class=3D"TextRun Spelli=
+ngErrorZoomed SCXP120462782 BCX8"><span class=3D"SCXP120462782 BCX8" style=
+=3D"text-decoration: none;">generatieve</span></span><span class=3D"TextRun=
+ SCXP120462782 BCX8"><span class=3D"NormalTextRun SCXP120462782 BCX8" style=
+=3D"text-decoration: none;">&nbsp;</span><span class=3D"NormalTextRun SCXP1=
+20462782 BCX8" style=3D"text-decoration: none;">A.I.</span></span><em><span=
+ class=3D"TextRun SCXP120462782 BCX8"><span class=3D"NormalTextRun SCXP1204=
+62782 BCX8" style=3D"text-decoration: none;"> </span></span></em></span><st=
+rong><span style=3D"color:#702e00;"><em><span class=3D"TextRun SCXP12046278=
+2 BCX8"><span class=3D"NormalTextRun SCXP120462782 BCX8" style=3D"text-deco=
+ration: none;">(6), </span></span></em></span></strong><span style=3D"color=
+:#702e00;"><span class=3D"TextRun SCXP120462782 BCX8"><span class=3D"Normal=
+TextRun SCXP120462782 BCX8" style=3D"text-decoration: none;">waarbij eigena=
+arschap en verantwoordelijkheid behouden blijft</span></span></span><strong=
+><span style=3D"color:#702e00;"><em><span class=3D"TextRun SCXP120462782 BC=
+X8"><span class=3D"NormalTextRun SCXP120462782 BCX8" style=3D"text-decorati=
+on: none;"> (4)</span></span></em></span></strong><span style=3D"color:#702=
+e00;"><em><span class=3D"TextRun SCXP120462782 BCX8"><span class=3D"NormalT=
+extRun SCXP120462782 BCX8" style=3D"text-decoration: none;">?</span></span>=
+</em></span></p>
+<p><br></p>
+<div class=3D"table-wrap">
+ <table class=3D"relative-table wrapped confluenceTable" style=3D"width: 12=
+1.503%;">
+  <colgroup>
+   <col style=3D"width: 14.2755%;">
+   <col style=3D"width: 23.3043%;">
+   <col style=3D"width: 6.63901%;">
+   <col style=3D"width: 10.0714%;">
+   <col style=3D"width: 13.3683%;">
+   <col style=3D"width: 18.2008%;">
+   <col style=3D"width: 14.1361%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th class=3D"highlight-#ff8b00 confluenceTh" scope=3D"col" data-highlig=
+ht-colour=3D"#ff8b00">
+     <p title=3D""><span style=3D"color:#ffffff;"><strong>Deelvraag</strong=
+></span></p></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" title=3D"Achtergrondkleur:=
+ Donkeroranje 100%" scope=3D"col" data-highlight-colour=3D"#ff8b00">
+     <p title=3D""><span style=3D"color:#ffffff;"><strong><span style=3D"co=
+lor:#ffffff;">Relevantie</span></strong></span></p></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" title=3D"Achtergrondkleur:=
+ Donkeroranje 100%" scope=3D"col" data-highlight-colour=3D"#ff8b00">
+     <p title=3D""><span style=3D"color:#ffffff;"><strong>Type</strong></sp=
+an></p></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" scope=3D"col" data-highlig=
+ht-colour=3D"#ff8b00">
+     <p title=3D""><span style=3D"color:#ffffff;"><strong>Onderzoekstrategi=
+e</strong></span></p></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" scope=3D"col" data-highlig=
+ht-colour=3D"#ff8b00">
+     <p title=3D""><span style=3D"color:#ffffff;"><strong>Onderzoeksmethode=
+</strong></span></p></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" scope=3D"col" data-highlig=
+ht-colour=3D"#ff8b00">
+     <p title=3D""><span style=3D"color:#ffffff;"><strong>Waarom</strong></=
+span></p></th>
+    <th class=3D"highlight-#ff8b00 confluenceTh" scope=3D"col" data-highlig=
+ht-colour=3D"#ff8b00">
+     <p title=3D""><span style=3D"color:#ffffff;"><strong>Bron</strong></sp=
+an></p></th>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"color:#164555;">1. Hoe ziet het huidige methodische =
+ideale ontwerpproces eruit (zonder generatieve A.I.)?</span></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"text-decoration: none;color:#164555;">Het onderzoek =
+kan helpen bij het vinden van stappen in het proces die niet zo goed werken=
+, of waar het ontwerpproces moeilijkheden mee heeft. Deze problemen kunnen =
+plekken zijn waar generatieve A.I.-tools kunnen worden gebruikt om het proc=
+es beter te maken.</span></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"color:#164555;">Beschrijvend</span></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"color:#164555;"><em>Library / available work</em></s=
+pan></p>
+     <p><span style=3D"color:#164555;">We willen inzicht krijgen in het hui=
+dige ontwerpproces. Dit is een bestaand proces waardoor wij zullen moeten k=
+ijken in bestaand werk.<em>&nbsp;</em></span></p>
+     <p><br></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <ol>
+      <li><span style=3D"color:#164555;">Literature research &nbsp;</span><=
+/li>
+      <li><span style=3D"color:#164555;">Community research</span></li>
+     </ol></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"color:#164555;">Literatuur onderzoek geeft een goed =
+beeld van de ''best practice'' welke nu geleerd wordt. Door literatuur te v=
+ergelijken ontstaat er een patroon van overeenkomsten welke een goed overzi=
+cht geven van het ideale ontwerpproces.</span></p>
+     <p><span style=3D"color:#164555;">Community research geeft ons inzicht=
+en in wat de doelgroep ervaart als het ideale methodische ontwerpproces. Wa=
+nneer we dit in kaart hebben, weten we op welk proces we de focus moeten le=
+ggen.</span></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><em><span style=3D"text-decoration: none;color:#172b4d;">Alle metho=
+des zijn gebaseerd op CMD Methods Pack en ICT Methods Pack</span></em></p>
+     <p><em><span style=3D"text-decoration: none;color:#172b4d;">(Turnhout,=
+ K. et al, 2015)</span></em></p>
+     <p><br></p>
+     <p><br></p></td>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"color:#164555;">2. Wat zijn de ethische implicaties =
+van het gebruik van generatieve A.I. in het ontwerpproces?</span></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"text-decoration: none;color:#164555;">Het implemente=
+ren van generatieve A.I. in het ontwerpproces kan leiden tot op generatieve=
+ A.I. gebaseerde creatieve beslissingen. Het is essentieel om de ethische k=
+westies te begrijpen met betrekking tot de transparantie en verantwoording =
+van deze beslissingen, om ervoor te zorgen dat ontwerpers en bedrijven vera=
+ntwoordelijkheid kunnen nemen voor de resultaten.</span></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"color:#164555;">Beschrijvend</span></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"color:#164555;"><em><span style=3D"text-decoration: =
+none;">&nbsp;Library / Field</span></em></span></p>
+     <p><span style=3D"text-decoration: none;color:#164555;">Voordat we kun=
+nen bepalen waar de ethische hiaten kunnen zitten in een ontwerpproces zull=
+en we deze moeten kunnen formuleren en de toepassingscontext begrijpen. Hie=
+rvoor hebben we overzicht nodig die bestaat uit zowel feiten als ervaring v=
+anuit de gebruikers.</span></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <ol>
+      <li><span style=3D"color:#164555;">Expert interview&nbsp;</span></li>
+      <li><span style=3D"color:#164555;">Focus group</span></li>
+     </ol></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><span style=3D"color:#164555;">Door een expert te interviewen wille=
+n wij inzicht krijgen in de voornaamste ethische kwesties die spelen bij di=
+gital designers.</span></p>
+     <p><span style=3D"color:#164555;">Met behulp van de focusgroep willen =
+wij testen welke ethische kwesties de grootste impact hebben bij digital de=
+signers en de keuzes die zij maken.&nbsp;</span></p></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p><br></p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">3. <span style=3D"letter-spacing: 0.=
+0px;">Welke taken en processen binnen het ontwerpproces kunnen worden verri=
+jkt door generatieve A.I.?</span></span></p></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Het onderzoeken van welke taken en p=
+rocessen binnen het ontwerpproces kunnen worden verrijkt door generatieve A=
+I is cruciaal om een diepgaand begrip te krijgen van de impact en de toepas=
+singen van AI in het ontwerpdomein, en om ontwerpers te ondersteunen bij he=
+t bereiken van hun doelen.</span></p></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Evaluerend</span></p></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;"><em>Field&nbsp;<br></em><em>Library<=
+/em></span></p>
+     <p><br></p>
+     <p><br></p>
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <ol>
+      <li><span style=3D"color:#164555;">Literature study</span></li>
+      <li><span style=3D"color:#164555;">Interview</span></li>
+     </ol>
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Door eerst te onderzoeken welke moge=
+lijke taken en processen verrijkt kunnen worden met A.I. met beschikbare ke=
+nnis, kunnen wij op basis van die inzichten de interviews opzetten en uitvo=
+eren.</span></p>
+     <p><span style=3D"color:#164555;">Door middel van interviews en observ=
+aties kunnen wij identificeren welke taken en processen verrijkt kunnen wor=
+den door A.I..</span></p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">4. Hoe kan de eigenaarschap en veran=
+twoordelijkheid voor het ontwerp en de output van generatieve A.I.-modellen=
+ worden toegewezen?</span></p></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Bij het gebruik van generatieve A.I.=
+-modellen, rijzen ethische kwesties met betrekking tot wie verantwoordelijk=
+ is voor de gegenereerde output. Het toewijzen van eigenaarschap en verantw=
+oordelijkheid is cruciaal om mogelijke schade, zoals bias, discriminatie of=
+ onjuiste informatie, te voorkomen en de integriteit van het ontwerpproces =
+te waarborgen.</span></p></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Evaluerend / Beschrijvend</span></p>=
+</td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;"><em>Library<br></em><em>Workshop<br>=
+</em><em>Showroom</em></span></p></td>
+    <td class=3D"confluenceTd">
+     <ol>
+      <li><span style=3D"color:#164555;">Best and good practices/ literatur=
+e</span></li>
+      <li><span style=3D"color:#164555;">Prototyping&nbsp;</span></li>
+     </ol></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Door best and good practices te onde=
+rzoeken die zijn toegepast bij eerdere projecten voor het ontwerp en de imp=
+lementatie van&nbsp;generatieve A.I.-modellen, kunnen wij leren van wat wel=
+ en niet heeft gewerkt in termen van het toewijzen van eigenaarschap en ver=
+antwoordelijkheid. Dit kan helpen om valkuilen te vermijden en succesvolle =
+strategie=C3=ABn toe te passen.</span></p>
+     <p><span style=3D"color:#164555;">De methode prototyping wordt gebruik=
+t om een concept te ontwikkelen en concreet te maken om vervolgens daarna t=
+e kunnen evalueren aan de hand van een ethical check bij stakeholders.&nbsp=
+;</span></p>
+     <p><br></p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><span style=3D"color:#164555;">5. Wat zijn d=
+e specifieke trainingseisen van digital designers om succesvol te werken me=
+t generatieve A.I.?</span></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Om het maximale uit de generatieve A=
+.I.-tool te halen, is het belangrijk om te bepalen wat de gebruikers al wet=
+en en wat ze nog moeten leren. Als gebruikers te weinig kennis hebben, kunn=
+en ze de tool niet goed gebruiken en als de training te ingewikkeld is, hak=
+en ze af. Daarom is het belangrijk om de kennisbehoefte en de bijbehorende =
+trainingseisen goed in kaart te brengen. Zo kunnen we ervoor zorgen dat de =
+tool effici=C3=ABnt wordt gebruikt en dat gebruikers er daadwerkelijk baat =
+bij hebben.</span></p></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Evaluerend / Beschrijvend</span></p>=
+</td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Field</span></p>
+     <p><span style=3D"color:#164555;">Library</span></p></td>
+    <td class=3D"confluenceTd">
+     <ol>
+      <li><span style=3D"color:#164555;">Interview</span></li>
+      <li><span style=3D"color:#164555;">Expert interview</span></li>
+     </ol></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">De onderzoeksruimte 'field' is gesch=
+ikt voor onderzoek naar evaluerende vragen, waarbij men kijkt naar de huidi=
+ge situatie. Tijdens een interview kan doormiddel van een aantal vragen het=
+ huidige kennisniveau worden getoetst.</span></p>
+     <p><span style=3D"color:#164555;">Voor het beantwoorden van beschrijve=
+nde vragen is de onderzoeksruimte 'library' geschikt, waarbij men kijkt naa=
+r bestaande kennis dat is opgedaan doormiddel van wetenschappelijk onderzoe=
+k of experts. Bij een 'expert interview' kan advies worden ingewonnen t.a.v=
+. het benodigde kennisniveau om effectief met generatieve A.I. te kunnen we=
+rken.&nbsp;</span></p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><span style=3D"color:#164555;">6. Hoe kunnen=
+ we effectieve trainingsmethoden voor generatieve A.I. ontwikkelen om de pr=
+estaties van de toepassing te bevorderen?</span></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Generatieve A.I. is een krachtige te=
+chnologie, maar zonder trainingsdata is het onbruikbaar. De tool kan dan on=
+juiste of zelfs schadelijke output genereren. Daarom is het cruciaal om de =
+tool te trainen met hoogwaardige data. Dit is een iteratief en tijdrovend p=
+roces, waardoor het goed is om te onderzoeken hoe we effectieve trainingsme=
+thoden kunnen ontwikkelen.</span></p></td>
+    <td class=3D"confluenceTd"><span style=3D"color:#164555;">Ontwerpend / =
+Beschrijvend</span></td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"color:#164555;">Workshop</span><br><span style=3D"co=
+lor:#164555;">Library</span><br><span style=3D"color:#164555;">Lab</span></=
+p></td>
+    <td class=3D"confluenceTd">
+     <ol>
+      <li><span style=3D"color:#164555;">Expert interview</span></li>
+      <li><span style=3D"color:#164555;">Prototyping</span></li>
+      <li><span style=3D"color:#164555;">A/B testing</span></li>
+     </ol></td>
+    <td class=3D"confluenceTd"><span style=3D"color:#164555;">Voor het bean=
+twoorden van beschrijvende vragen is de onderzoeksruimte 'library' geschikt=
+, waarbij men kijkt naar bestaande kennis dat is opgedaan doormiddel van we=
+tenschappelijk onderzoek of experts. Door het interviewen van experts krijg=
+t men een goed beeld van de benodigde trainingsdata en de ontwikkelingsmeth=
+odes. Deze kennis kan men vervolgens in de praktijk toetsen door het maken =
+van een prototype, binnen de methode 'prototyping' en modellen te verifiere=
+n binnen de 'A/B/ testing methode'. Hierbij kijken we naar de effectiviteit=
+ en kwaliteit van de tool met verschillende hoeveelheden en typen data.</sp=
+an></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<h1 id=3D"Hetonderzoeksplan-Planning">Planning</h1>
+<p>Hier gaan we aan de hand van de onderzoeksmethodes en acties die uitgevo=
+erd moeten worden een planning maken. Dit kan aan de hand van bijvoorbeeld =
+een Gantt chart (<a class=3D"external-link" href=3D"http://Gantt.com" rel=
+=3D"nofollow">Gantt.com</a>, z.d.).</p>
+<p>De planning is te vinden via onderstaande link.</p>
+<p><a class=3D"external-link" href=3D"https://hannl.sharepoint.com/:x:/r/te=
+ams/AIM-MIN-DTI2024feb/Gedeelde%20documenten/I-Projectgroep%202%20Generatie=
+ve%20AI%20tools/Fase%20100/planning%20fase100.xlsx?d=3Dw4b08f3e64e9147d3a69=
+94a7953028e2b&amp;csf=3D1&amp;web=3D1&amp;e=3DN0WYIe" rel=3D"nofollow">http=
+s://hannl.sharepoint.com/:x:/r/teams/AIM-MIN-DTI2024feb/Gedeelde%20document=
+en/I-Projectgroep%202%20Generatieve%20AI%20tools/Fase%20100/planning%20fase=
+100.xlsx?d=3Dw4b08f3e64e9147d3a6994a7953028e2b&amp;csf=3D1&amp;web=3D1&amp;=
+e=3DN0WYIe</a></p>
+<p><br></p>
+<h1 id=3D"Hetonderzoeksplan-Literatuurlijst"><span class=3D"confluence-embe=
+dded-file-wrapper confluence-embedded-manual-size">Literatuurlijst</span></=
+h1>
+<ul style=3D"text-decoration: none;">
+ <li>Adobe. (z.d.). Design thinking: een beginnersgids. Geraadpleegd op 23 =
+maart 2024, van <a class=3D"external-link" href=3D"https://www.adobe.com/nl=
+/creativecloud/design/discover/design-thinking.html" rel=3D"nofollow" style=
+=3D"text-decoration: underline;">https://www.adobe.com/nl/creativecloud/des=
+ign/discover/design-thinking.html</a></li>
+ <li>Chen, M. (2023b, december 6). What is AI model training &amp; why is i=
+t important? <a class=3D"external-link" href=3D"https://www.oracle.com/arti=
+ficial-intelligence/ai-model-training/" rel=3D"nofollow" style=3D"text-deco=
+ration: underline;">https://www.oracle.com/artificial-intelligence/ai-model=
+-training/</a></li>
+ <li>Creativiteit - Uitleg begrip creatief. (z.d.). <a class=3D"external-li=
+nk" href=3D"https://wij-leren.nl/creativiteit.php#:~:text=3DCreativiteit%20=
+is%20het%20vermogen%20om,denken%20of%20op%20het%20doen" rel=3D"nofollow" st=
+yle=3D"text-decoration: underline;">https://wij-leren.nl/creativiteit.php#:=
+~:text=3DCreativiteit%20is%20het%20vermogen%20om,denken%20of%20op%20het%20d=
+oen</a>.</li>
+ <li>Een succesvolle digitaal ontwerper worden | Adobe. (z.d.). Geraadpleeg=
+d op 27 maart 2024, van <a class=3D"external-link" href=3D"https://www.adob=
+e.com/nl/creativecloud/design/discover/digital-design.html" rel=3D"nofollow=
+" style=3D"text-decoration: underline;">https://www.adobe.com/nl/creativecl=
+oud/design/discover/digital-design.html</a></li>
+ <li>Ethiek. (2017, 7 april). KNMG. Geraadpleegd op 27 maart 2024, van <a c=
+lass=3D"external-link" href=3D"https://www.knmg.nl/ik-ben-geneeskundestuden=
+t-1/ethische-toolkit/verdiepen/begrippen-2/ethiek-6" rel=3D"nofollow" style=
+=3D"text-decoration: underline;">https://www.knmg.nl/ik-ben-geneeskundestud=
+ent-1/ethische-toolkit/verdiepen/begrippen-2/ethiek-6</a></li>
+ <li><a class=3D"external-link" href=3D"http://Gantt.com" rel=3D"nofollow">=
+Gantt.com</a>. (z.d.). <a class=3D"external-link" href=3D"http://Gantt.com"=
+ rel=3D"nofollow">Gantt.com</a>. <a class=3D"external-link" href=3D"https:/=
+/www.gantt.com/" rel=3D"nofollow" style=3D"text-decoration: underline;">htt=
+ps://www.gantt.com/</a></li>
+ <li>Kirvan, P. (2023, 13 april). Prototype. ERP. Geraadpleegd op 27 maart =
+2024, van <a class=3D"external-link" href=3D"https://www.techtarget.com/sea=
+rcherp/definition/prototype" rel=3D"nofollow" style=3D"text-decoration: und=
+erline;">https://www.techtarget.com/searcherp/definition/prototype</a></li>
+ <li>OpenAI. (z.d.). Generative AI: Models, Techniques, and Applications. G=
+eraadpleegd op 16 maart 2024, van <a class=3D"external-link" href=3D"https:=
+//openai.com/generative-ai" rel=3D"nofollow" style=3D"text-decoration: unde=
+rline;">https://openai.com/generative-ai</a></li>
+ <li>Talentontwikkeling. (2024, 11 februari). Wat is Eigenaarschap - Talent=
+ontwikkeling. <a class=3D"external-link" href=3D"https://www.talentontwikke=
+ling.com/blog/wat-is-eigenaarschap/#:~:text=3DAls%20we%20teruggaan%20naar%2=
+0de,dat%20je%20je%20verantwoordelijkheid%20neemt" rel=3D"nofollow" style=3D=
+"text-decoration: underline;">https://www.talentontwikkeling.com/blog/wat-i=
+s-eigenaarschap/#:~:text=3DAls%20we%20teruggaan%20naar%20de,dat%20je%20je%2=
+0verantwoordelijkheid%20neemt</a>.</li>
+ <li>Turnhout, K. van, Jacobs, M., Kamp, I., Mulholland, C., Neuman, A., Ro=
+uwhorst, S. &amp; Vlies, L. van (2015). CMD Methods Pack: Find a combinatio=
+n of research methods that suit your needs. HAN University of Applied Scien=
+ces - Amsterdam University of Applied Sciences, the Netherlands.</li>
+ <li>What is an AI tool? | Synthesia Glossary. (z.d.). [Video]. Geraadpleeg=
+d op 27 maart 2024, van <a class=3D"external-link" href=3D"https://www.synt=
+hesia.io/glossary/ai-tool#:~:text=3Dan%20AI%20tool%3F-,An%20AI%20tool%20is%=
+20a%20software%20application%20that%20uses%20artificial,%2C%20and%20improve=
+%20decision%2Dmaking" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">https://www.synthesia.io/glossary/ai-tool#:~:text=3Dan%20AI%20tool%3F-,An=
+%20AI%20tool%20is%20a%20software%20application%20that%20uses%20artificial,%=
+2C%20and%20improve%20decision%2Dmaking</a>.</li>
+</ul>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_4_894167944.1772028766875--
