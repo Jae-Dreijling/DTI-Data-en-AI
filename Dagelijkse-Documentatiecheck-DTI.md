@@ -1,6 +1,6 @@
 # Dagelijkse documentatiecheck: Minor DT&I
 
-**Voor:** mezelf, aan het eind van elke werkdag (±10 min) · **Hoort bij:** [`Projecthandboek-DTI.md`](./Projecthandboek-DTI.md) en [`Planning-en-Deliverables-DTI.md`](./Planning-en-Deliverables-DTI.md)
+**Voor:** mezelf, aan het eind van elke werkdag (±10 min) · **Hoort bij:** [`Projecthandboek-DTI.md`](./Projecthandboek-DTI.md) en [`Planning-en-Deliverables-DTI.md`](./Planning-en-Deliverables-DTI.md) · **Invulbare templates:** [`Documentatie/`](./Documentatie/)
 Gebaseerd op: `Rubrix_onderzoeksplan.pdf`, `Rubrix_proces-resultaat.pdf`, `Kickoff_DTI_2627S1.pdf`, `DTI FEEDBACKSESSIES & STAKEHOLDERSESSIES.pdf`, `Oplevering deliverables DTI.pdf`
 
 ---
