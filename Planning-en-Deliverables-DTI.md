@@ -75,3 +75,4 @@ Legenda: 🎯 = designsprint start · 🗣️ = feedbacksessie · 🤝 = stakeho
 2. Wat is de exacte inleverdatum van het eind-deliverables-pakket?
 3. Is de map "Organisatie & Toetsing DTI2526S2" in Teams (genoemd in de week 3-lesvoorbereiding) de juiste map, of bestaat er een DTI2627S1-variant?
 4. Gaat de excursie in week 51 door, en wat gebeurt er in week 4 (die staat nu leeg in het rooster)?
+5. Moet de "definitieve versie" van het Onderzoeksplan (stakeholderbijeenkomst 1, week 40) al op één definitief gekozen concept gebaseerd zijn, of mag het onderzoekskader dan nog 2–3 concepten in parallel open houden?

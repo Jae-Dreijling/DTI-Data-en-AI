@@ -52,6 +52,20 @@ Achter elke trigger staat welk criterium ermee punten scoort. **Vet = nodig voor
 | **BRON** | Literatuurlijst (APA) | Elke bron, ook websites, gesprekken en bestaande producten |
 | **MEDIA** | Teams-map `Beeld/` | Foto's, screenshots, schetsen, video's, met datum in de bestandsnaam |
 
+### Grens: wat hoort *niet* in het Onderzoeksplan (OZP)?
+
+Het Onderzoeksplan is een op te leveren deliverable (concept week 38, definitief week 40), geen logboek. Spullen uit hetzelfde gesprek horen dus niet automatisch allemaal in OZP:
+
+| Dit hoort er *niet* in… | …maar hier wel |
+|---|---|
+| Actiepunten met eigenaar + deadline uit een gesprek (trigger D7) | LOG (dagverslag) en/of de notulen van dat gesprek |
+| Losse feedback + van wie + wat we ermee doen (trigger D2) | FB (feedbacklog) |
+| Ruwe, nog niet uitgewerkte brainstormlijsten | LOG, of duidelijk gemarkeerd als "backlog/nog te verwerken" totdat het een deelvraag wordt |
+| Inline discussie/review-comments ("reactie: …") | Teams-comments of het gesprek zelf, niet als lopende tekst in het document |
+| Gedetailleerde taakverdeling/sprintplanning | DR (Design Rationale) sprintblokken, of `Planning-en-Deliverables-DTI.md` |
+
+Vuistregel: alles in OZP moet je zó aan een beoordelaar kunnen laten zien als **het** onderzoeksplan — geen ruwe restjes van een gesprek erin, wel de vragen/methodes/inzichten die daaruit volgen.
+
 ---
 
 ## Deel 1: Triggers (loop ze allemaal door)
