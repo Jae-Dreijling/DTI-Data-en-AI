@@ -28,8 +28,6 @@ Dit is het onderzoeksplan; vragen, methodes, begrippen, theoretisch kader, risic
 
 ## Begrippenlijst
 
-> 💬 **Bart Ressing:** Sowieso ook afkortinglijst toevoegen (apart ding)
-
 Begrippen die we nodig hebben om onze keuzes te onderbouwen. Groeit nog: zodra we met een idee aan de slag gaan weten we pas welke begrippen erbij moeten. Afkortingen zetten we er ook in, scheelt weer een aparte lijst.
 
 | Begrip | Definitie | Bron |
@@ -46,12 +44,6 @@ Deze tabel vullen we verder aan zodra we onderzoeksvragen beantwoorden; elk begr
 Binnen de ICT-opleiding kiezen relatief weinig studenten voor Data & AI. opvallend, want de richting wordt juist steeds belangrijker (zowel qua maatschappelijke impact als qua kans op werk). dus: studenten en de opleiding laten hier kansen liggen.
 
 nu worden er studenten geworven op vier momenten: schoolvoorlichting, open dagen, proefstuderen, keuzemoment in de propedeuze. gericht op vier doelgroepen: MBo'ers, HAVO/VWO'ers, propedeusestudenten, en mensen met een baan die daarnaast willen studeren.
-
-> 💬 **Bart Ressing:** Dit mag gramaticaal anders, het leest namelijk niet lekker. Ben zelf ook aan het nadenken over een oplossing voor deze zin.
->
-> **Jae Dreijling:** Misschien its zoals "Op dit moment worden studenten op vier momenten geworven: tijdens schoolvoorlichtingen, open dagen, proefstudeerdagen en het keuzemoment in de propedeuse. De werving richt zich op vier doelgroepen: mbo'ers, havo/vwo-leerlingen, propedeusestudenten en werkenden die naast hun baan willen studeren." gewoon het apart zetten naar 2 zinnen i.p.v. een langere. (als dit goed past)
->
-> **Bart Ressing:** dit klinkt inderdaad al veel beter. denk dat dit dus goed is
 
 het probleem: de aanpak nu is vooral tradtioneel (folder, praatje, standje), sorteert onvoldoende effect. (bron: casusbeschrijving Lesmateriaal/AI-en-DATA, later in de sources zetten)
 
@@ -153,10 +145,6 @@ Waar we nu al aan denken om verder uit te werken zodra relevant:
 - Doelgroepsegmentatie (geografisch/demografisch/psychografisch/gedrag): sluit aan bij de indeling MBO/HAVO-VWO/propedeuse, zie Lesmateriaal/DTI_Requirements & userstories.pdf.
 - Requirements (SMART) & userstories (ITVES): om straks concrete eisen aan onze oplossing te kunnen stellen.
 
-  > 💬 **Bart Ressing** (bij "ITVES"): Wat betekend deze afkorting?
-  >
-  > **Jae Dreijling:** Het is een foute spelling van INVEST.. oops
-
 - Etc. Etc. Theorie specifiek voor het gekozen idee
 
 ## Onderzoeksvragen
@@ -244,8 +232,6 @@ Nog niet besloten, maar deze thema's passen niet lekker in A/B/C(/D) en liggen a
 
 ## Mogelijke deelvragen:
 
-> 💬 **Jae Dreijling:** "Motifaction" onderzoek (motivation + faction?) van docent
-
 Backlog - nog niet verwerkt. Ruwe vragen uit brainstormsessies (whiteboard/stickies), nog niet vertaald naar deelvragen in de tabellen hierboven. Blijft hier staan totdat een vraag getrieerd is: dan verhuist hij naar Blok A/B/C/D (of een nieuw blok) met onderzoeksstrategie/-methode, of wordt hij geschrapt.
 
 **Samenwerkingsgrenzen en voorwaarden:**
@@ -269,7 +255,6 @@ Aannames:
 2. Dat mensen gewoon niet willen beginnen aan Data & AI of dat mensen eigenlijk het onduidelijk vinden wat Data & AI doet, hoever je ermee komt en wie je kan worden.
 3. 
 
-> 💬 **Bart Ressing:** We hadden er nog meer, gewoon uit mail kopieeren
 
 *(kleur: oranje, in het origineel)*
 
@@ -331,7 +316,6 @@ Aannames:
 
 **Haalbaarheid per idee** (dit vullen we in zodra onze top-3 bekend is, nu nog te vroeg):
 
-> 💬 **Bart Ressing:** Dit nog niet invullen / Later pas
 
 | Idee | Wat is nodig (technisch) | Wat is nodig (inhoudelijk/kennis) | Geschatte tijd/complexiteit | Past bij beschikbare tools? |
 |---|---|---|---|---|
