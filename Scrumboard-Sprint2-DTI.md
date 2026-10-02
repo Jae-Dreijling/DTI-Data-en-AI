@@ -6,7 +6,7 @@ Opgesteld: 2 oktober 2026, na afronding van designsprint 1.
 > **Status:** dit is een **menu**, geen vaste planning. Kies samen in de sprintplanning welke tickets jullie echt overnemen, pas de schattingen aan en zet er namen bij. Alles wat hier te veel is, schuif je door naar de backlog (sprint 3).
 
 **Uitgangspunten**
-- **Tool:** Jira (Scrum-template). Documenten blijven in deze repo/Teams en worden vanuit tickets gelinkt.
+- **Tool:** Jira (Scrum-template) + Confluence voor documentatie, zie de beslissing in [`Tools-Vergelijking-DTI.md`](./Tools-Vergelijking-DTI.md). Documenten worden vanuit tickets gelinkt.
 - **Sprintdoel designsprint 2:** *idee gekozen, uitgewerkt, eerste prototype getoetst.*
 - **Concept:** we neigen naar **concept 1, de fysieke/virtuele trein**, maar dat is nog **geen besluit**. Eerst toetsen bij de doelgroep, daarna een expliciete go/no-go (zie [beslismoment](#het-beslismoment-trein-go--no-go)). AI-huisdier en biometrie blijven tot dan de alternatieven (kill your darlings).
 
@@ -69,7 +69,7 @@ Designsprint 2 loopt van **week 41 t/m week 46** (5 werkweken, week 43 is herfst
 | **Board-kolommen** | Backlog → To Do → In Progress → **Review** → Done | "Review" = een teamgenoot kijkt mee voordat iets Done is. Dat geeft zichtbaar "constructief kritisch op andermans werk" (PR2, goed) |
 | **Velden aanzetten** | Story point estimate, Original estimate/Time tracking, Due date, Labels, Priority | Story points op stories/tasks, uren op sub-tasks (zie §4) |
 | **Sprints** | DS2a en DS2b aanmaken, sprintdoel invullen bij "Start sprint" | Het sprintdoel komt terug in de sprintreview en het burndown-rapport |
-| **Koppelingen** | Links naar documenten in de repo/Teams in de ticketbeschrijving; optioneel GitHub-integratie voor de prototypecode | Jira heeft zonder Confluence geen echte docs, dus het board linkt naar waar de docs staan |
+| **Koppelingen** | Confluence-pagina's (of documenten in Teams/repo) koppelen aan tickets; optioneel GitHub-integratie voor de prototypecode | Zo is vanuit het board te zien welk document bij welk werk hoort |
 | **Rapporten** | Burndown + Sprint report screenshotten aan het eind van elke sprint | Bewijs voor de Design Rationale (agile werkwijze, PR2) |
 
 **Werkafspraken (tip: zet ze in de projectbeschrijving):**
@@ -217,8 +217,8 @@ Notatie: **Type · SP · Prio · Sprint · Due**. Uren staan achter elke sub-tas
 
 #### S2-06 · Toolkeuze Jira vastleggen in het beslissingenlog
 **Task · 1 SP · Medium · DS2a · Due 9 okt** · Labels: `proces` `documentatie` `pr2`
-**Waarom:** in [`Tools-Vergelijking-DTI.md`](./Tools-Vergelijking-DTI.md) scoorde Jira 57/90 en was het advies "drop it". We kiezen het nu toch, dus moeten we uitleggen **waarom** (bv. professionele scrum-weergave, burndown als bewijs voor PR2, ervaring opdoen met een tool uit het werkveld) en hoe we de nadelen opvangen (docs blijven in repo/Teams).
-- [ ] Beslissing + alternatieven + waarom + hoe we de nadelen opvangen in het beslissingenlog — `1h`
+**Waarom:** de onderbouwing staat al in [`Tools-Vergelijking-DTI.md`](./Tools-Vergelijking-DTI.md) (sectie "Beslissing": Jira + Confluence, 63/90, iedereen heeft er ervaring mee). Die moet nog als beslissing in het beslissingenlog, met datum en wie besloten heeft.
+- [ ] Beslissing uit de tools-vergelijking overnemen in het beslissingenlog (+ datum/namen invullen) — `0.5h`
 
 #### S2-07 · Scrum-ceremonies designsprint 2
 **Task · 3 SP · High · DS2a + DS2b** · Labels: `proces` `pr2`

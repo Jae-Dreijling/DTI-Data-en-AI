@@ -1,175 +1,203 @@
-# Tools vergelijking: scrum board, updates, documentatie etc.
+# Tools vergelijking
 
-so for the rest of the project we need 1 place (or max 2!) for:
-- scrum board (backlog, sprints, who does what)
-- updates / stand-ups / sprintreviews
-- documentation (onderzoeksplan, design rationale, beslissingenlog, feedbacklog, notulen etc.)
-- files + media (photos of prototypes, video's for the deliverables)
-- and some code/hardware stuff once we start building (train idea? arduino/unity/raspberry pi)
+### Scrum board, updates, documentatie & bestanden
 
-I was thinking github or jira, but we should look at more before we pick one.
+| **Auteur(s):** | Jae Dreijling |
+|---|---|
+| **Versie** | 1 |
 
-* rubric reminder: stand-ups, sprintreviews, feedback and decisions only count if they're VISIBLE (PR2/PR4, see [Dagelijkse-Documentatiecheck-DTI.md](./Dagelijkse-Documentatiecheck-DTI.md)), so the tool has to make that easy, not harder!!
+## Inleiding
 
----
+Voor de rest van het project hebben we één plek nodig (of maximaal twee) voor:
 
-## What matters for us (criteria)
+- **Scrum board:** backlog, sprints, wie doet wat
+- **Updates:** stand-ups en sprintreviews
+- **Documentatie:** onderzoeksplan, design rationale, beslissingenlog, feedbacklog, notulen, enz.
+- **Bestanden en media:** foto's van prototypes, video's voor de deliverables
+- **Code en hardware:** zodra we gaan bouwen (treinidee? Arduino / Unity / Raspberry Pi)
 
-Weight = how important for OUR project (3 = very, 1 = nice to have).
+Het eerste idee was GitHub of Jira, maar we willen eerst meer opties bekijken voordat we er één kiezen.
 
-| # | Criterium | Weight | Why |
+Rubric-herinnering: stand-ups, sprintreviews, feedback en beslissingen tellen alleen mee als ze ZICHTBAAR zijn (PR2/PR4, zie [Dagelijkse-Documentatiecheck-DTI.md](./Dagelijkse-Documentatiecheck-DTI.md)). De tool moet dat makkelijker maken, niet moeilijker.
+
+## Criteria
+
+Wat voor ons belangrijk is. Weging = hoe belangrijk het criterium is voor ONS project (3 = heel belangrijk, 1 = leuk om te hebben).
+
+| # | Criterium | Weging | Waarom |
 |---|---|---|---|
-| 1 | Scrum board (backlog, sprints, assign tasks) | 3 | we work in design sprints, needs to show who does what |
-| 2 | Documentation / wiki | 3 | project is mostly research, so most of our work = documents |
-| 3 | Easy to learn for the WHOLE team | 3 | 4 people, not everyone is a dev; if 1 person uses it, it's useless |
-| 4 | Cost (free for 4 students) | 2 | no budget for tools (HAN budget is for the product, not this) |
-| 5 | Code / building integration (git, versions) | 2 | for the train / prototype part later |
-| 6 | Sharing with docent / opdrachtgever | 2 | they should be able to look without too much hassle |
-| 7 | Microsoft Teams / Office integration | 1 | HAN uses Teams + Word for everything already |
-| 8 | Media & files (photos, video's) | 1 | needed for the eind-deliverables (3 beelden, video, poster) |
-| 9 | Export / keeping it after the minor | 1 | overdraagbaarheid + reproduceerbaarheid (deliverables) |
+| 1 | Scrum board (backlog, sprints, taken toewijzen) | 3 | We werken in design sprints; het board moet laten zien wie wat doet |
+| 2 | Documentatie / wiki | 3 | Het project is vooral onderzoek, dus het meeste werk bestaat uit documenten |
+| 3 | Makkelijk te leren voor het HELE team | 3 | 4 personen, niet iedereen is developer; als maar 1 persoon het gebruikt, heeft het geen zin |
+| 4 | Kosten (gratis voor 4 studenten) | 2 | Geen budget voor tools (het HAN-budget is voor het product, niet hiervoor) |
+| 5 | Code / bouwen (git, versies) | 2 | Voor het trein- / prototypedeel later |
+| 6 | Delen met docent / opdrachtgever | 2 | Zij moeten zonder gedoe kunnen meekijken |
+| 7 | Microsoft Teams / Office-integratie | 1 | De HAN gebruikt al Teams en Word voor alles |
+| 8 | Media & bestanden (foto's, video's) | 1 | Nodig voor de eind-deliverables (3 beelden, video, poster) |
+| 9 | Exporteren / bewaren na de minor | 1 | Overdraagbaarheid en reproduceerbaarheid (deliverables) |
 
-Max score = 5 x 18 = **90**
+**Maximale score = 5 × 18 = 90.**
 
----
-
-## The options
+## De opties
 
 ### 1. GitHub (repo + Issues + Projects board)
-**tops:**
-- free, and we basically already use it (this repo!)
-- Projects = kanban/scrum board with sprints (iterations), linked to issues
-- docs as markdown in the repo: version history of EVERYTHING, you can see who changed what (great for "individuele bijdrage zichtbaar")
-- best option for the building part: code, arduino sketches, unity project etc.
-- easy to export / keep after the minor, it's just files
 
-**downs:**
-- steep for non-devs (git, commits, markdown) (HIGH RISK for team adoption)
-- word docs (onderzoeksplan) don't really "live" well in git, no nice preview/editing
-- private repo = docent/opdrachtgever needs a github account + invite
-- photos/video's are clunky in a repo (big files)
+**Voordelen**
+- Gratis, en we gebruiken het eigenlijk al (deze repo!)
+- Projects = kanban-/scrumboard met sprints (iterations), gekoppeld aan issues
+- Docs als markdown in de repo: versiegeschiedenis van alles, je ziet wie wat heeft aangepast (ideaal voor "individuele bijdrage zichtbaar")
+- Beste optie voor het bouwdeel: code, Arduino-sketches, Unity-project, enz.
+- Makkelijk te exporteren/ bewaren na de minor, het zijn gewoon bestanden
 
-### 2. Jira (+ Confluence for docs)
-**tops:**
-- THE "professional" scrum tool: sprints, backlog, burndown charts, story points, everything
-- looks good to show you did proper agile (sprintreviews etc.)
-- free plan for small teams (check current limits)
-- integrates with github and teams
+**Nadelen**
+- Lastig voor niet-developers (git, commits, markdown): Redelijke risico dat niet iedereen er bekend mee is. (maar ik verwacht binnen het team zelf dat het wel bekend is)
+- Word-documenten (onderzoeksplan) passen niet goed in git; geen fijne preview of bewerking
+- Private repo = docent/opdrachtgever heeft een GitHub-account en een uitnodiging nodig
+- Foto's en video's zijn onhandig in een repo (grote bestanden)
 
-**downs:**
-- docs are NOT in jira, you need confluence on top = 2 tools to learn
-- lots of setup + way too many features for a 4-person student team (overkill)
-- everyone (incl. docent) needs an atlassian account
-- learning curve, people will stop updating it after week 2 (be honest lol)
+### 2. Jira (+ Confluence voor docs)
+
+**Voordelen**
+- Dé "professionele" scrumtool: sprints, backlog, burndown charts, story points, alles
+- Ziet er goed uit om te laten zien dat we echt agile werken (sprintreviews enz.)
+- Gratis plan voor kleine teams (huidige limieten checken)
+- Integreert met GitHub en Teams
+
+**Nadelen**
+- Docs zitten NIET in Jira; daar is Confluence voor nodig = 2 tools om te leren
+- Veel inrichtwerk en veel te veel functies voor een studententeam van 4 (overkill)
+- Iedereen (ook de docent) heeft een Atlassian-account nodig
+- Leercurve: eerlijk gezegd stopt iedereen na week 2 met bijwerken
 
 ### 3. Trello
-**tops:**
-- super easy, everyone gets it in 5 min
-- public board link possible (docent can just look)
-- teams app exists
 
-**downs:**
-- just a kanban board, no real sprints/backlog without power-ups
-- no documentation at all (need another tool)
-- free plan has limits (collaborators/boards, check) 
-- nothing for code
+**Voordelen**
+- Supermakkelijk, iedereen snapt het binnen 5 minuten
+- Openbare boardlink mogelijk (docent kan gewoon meekijken)
+- Er is een Teams-app
+
+**Nadelen**
+- Alleen een kanbanboard; geen echte sprints/backlog zonder power-ups
+- Helemaal geen documentatie (er is nog een tool nodig)
+- Gratis plan heeft limieten (samenwerkers/boards, checken)
+- Niets voor code
 
 ### 4. Notion
-**tops:**
-- board AND docs in 1 place (databases: sprint board, beslissingenlog, feedbacklog, notulen as linked pages)
-- really nice for research projects: pages, tables, embeds, images, video
-- free for students with a school email (education plan, check)
-- share pages publicly with a link (docent/opdrachtgever don't need an account)
-- export to markdown/pdf
 
-**downs:**
-- not an "official" scrum tool, you have to set up the sprint board yourself (templates exist)
-- no git / code versioning (code would still need github)
-- can get messy fast if nobody keeps structure
-- no real teams integration
+**Voordelen**
+- Board ÉN docs op één plek (databases: sprintboard, beslissingenlog, feedbacklog, notulen als gekoppelde pagina's)
+- Erg geschikt voor onderzoeksprojecten: pagina's, tabellen, embeds, afbeeldingen, video
+- Gratis voor studenten met een schoolmail (education plan, checken)
+- Pagina's openbaar delen via een link (docent/opdrachtgever hebben geen account nodig)
+- Exporteren naar markdown/pdf
+
+**Nadelen**
+- Niet vaak gebruikt in de opleiding; mogelijk nieuw voor team.
+- Geen "officiële" scrumtool; het sprintboard moeten we zelf opzetten (er zijn templates)
+- Geen git/ versiebeheer voor code (code zou nog steeds in GitHub moeten)
+- Kan snel rommelig worden als niemand de structuur bewaakt
+- Geen echte Teams-integratie
 
 ### 5. Microsoft Teams + Planner (+ OneNote / SharePoint)
-**tops:**
-- we ALREADY use it: HAN, docenten and opdrachtgevers are all in teams
-- free (school license), zero setup
-- word docs (onderzoeksplan!) edit together live, files + video storage via onedrive
-- easiest for sharing with docent/opdrachtgever by far
 
-**downs:**
-- planner = basic kanban, no real sprints/backlog/story points (sprints are a premium thing)
-- documentation spread over files/onenote/chat, hard to find stuff back
-- nothing for code
-- harder to take with you after the minor (school account)
+**Voordelen**
+- We gebruiken het AL: de HAN, docenten en opdrachtgevers zitten allemaal in Teams
+- Gratis (schoollicentie), geen inrichtwerk
+- Word-documenten (onderzoeksplan!) samen live bewerken; opslag van bestanden en video via OneDrive
+- Veruit het makkelijkst om te delen met docent/opdrachtgever
+
+**Nadelen**
+- Planner = basic kanban; geen echte sprints/backlog/story points (sprints zijn een premiumfunctie)
+- Documentatie verspreid over bestanden/OneNote/chat, lastig terug te vinden
+- Niets voor code
+- Lastiger mee te nemen na de minor (schoolaccount)
 
 ### 6. Azure DevOps
-**tops:**
-- full scrum (boards, sprints, backlogs) + wiki + git repos in 1
-- free for small teams (basic plan, check user limit)
 
-**downs:**
-- VERY technical, made for software companies (way too heavy for us)
-- ugly/complicated for non-devs, everyone needs a microsoft dev account
-- not great for documents/media
+**Voordelen**
+- Volledige scrum (boards, sprints, backlogs) + wiki + git-repo's in één
+- Gratis voor kleine teams (basic plan, gebruikerslimiet checken)
 
-### 7. ClickUp
-**tops:**
-- tries to do everything: boards, sprints, docs, whiteboards
-- free plan
+**Nadelen**
+- ZEER technisch, gemaakt voor softwarebedrijven (veel te zwaar voor ons)
+- Onoverzichtelijk/ingewikkeld voor niet-developers; iedereen heeft een Microsoft dev-account nodig
+- Niet sterk in documenten/media
 
-**downs:**
-- feature overload, overwhelming
-- free plan has a small storage limit (bad for photos/video's)
-- yet another account for everyone
+Miro / FigJam zijn goed voor brainstorms, stakeholdermaps en customer journey maps, maar het zijn geen scrum-/documentatietools. Die staan daarom los hiervan en zijn niet meegenomen in de tabel.
 
-* (Miro / FigJam = good for brainstorms, stakeholder maps, customer journey maps, but not a scrum/docs tool, so separate thing, not in the table)
+## Scoretabel
 
----
+Scores van 1 (slecht) tot 5 (uitstekend); het gewogen totaal staat in de laatste rij. De hoogste score per criterium is vetgedrukt.
 
-## Score table
+| Criterium (weging) | GitHub | Jira + Confl. | Trello | Notion | Teams + Planner | Azure DevOps |
+|---|---|---|---|---|---|---|
+| Scrum board (3) | 4 | **5** | 3 | 4 | 2 | **5** |
+| Documentatie (3) | 3 | 3 | 1 | **5** | 3 | 3 |
+| Makkelijk voor heel team (3) | 2 | 4 | **5** | 2 | **5** | 1 |
+| Kosten (2) | **5** | 4 | 4 | **5** | **5** | 4 |
+| Code / bouwen (2) | **5** | 3 | 2 | 2 | 1 | **5** |
+| Delen met docent/opdrachtgever (2) | 3 | 2 | 4 | **5** | **5** | 2 |
+| Teams/Office-integratie (1) | 2 | 3 | 3 | 2 | **5** | 3 |
+| Media & bestanden (1) | 2 | 3 | 3 | 4 | **5** | 2 |
+| Export / na de minor (1) | **5** | 3 | 2 | 4 | 3 | 3 |
+| **Totaal (max 90)** | **62** | **63** | **55** | **67** | **65** | **57** |
 
-Scores 1 (bad) to 5 (great), weighted total in the last column.
-
-| Criterium (weight) | GitHub | Jira + Confluence | Trello | Notion | Teams + Planner | Azure DevOps | ClickUp |
-|---|---|---|---|---|---|---|---|
-| Scrum board (3) | 4 | **5** | 3 | 4 | 2 | **5** | 4 |
-| Documentatie (3) | 3 | 3 | 1 | **5** | 3 | 3 | 4 |
-| Makkelijk voor heel team (3) | 2 | 2 | **5** | 3 | **5** | 1 | 2 |
-| Kosten (2) | **5** | 4 | 4 | **5** | **5** | 4 | 3 |
-| Code / bouwen (2) | **5** | 3 | 2 | 2 | 1 | **5** | 3 |
-| Delen met docent/opdrachtgever (2) | 3 | 2 | 4 | **5** | **5** | 2 | 3 |
-| Teams/Office integratie (1) | 2 | 3 | 3 | 2 | **5** | 3 | 3 |
-| Media & bestanden (1) | 2 | 3 | 3 | 4 | **5** | 2 | 2 |
-| Export / na de minor (1) | **5** | 3 | 2 | 4 | 3 | 3 | 3 |
-| **Totaal (max 90)** | **62** | **57** | **55** | **70** | **65** | **57** | **56** |
+> ✏️ *Nagerekend bij het omzetten naar markdown (2-10-2026): in de Word-versie stond Jira op 57 (en 59 in de ranking) en Notion op 69. Met de scores uit de tabel komt Jira uit op **63** en Notion op **67**. Waarschijnlijk zijn de totalen niet bijgewerkt na het aanpassen van "Makkelijk voor heel team" (Jira 2 → 4, Notion 3 → 2).*
 
 ### Ranking
-1. **Notion: 70** (best all-rounder: board + docs + sharing)
-2. **Teams + Planner: 65** (easiest, already there, but weak board)
-3. **GitHub: 62** (best for building/code, hard for non-devs)
-4. Jira + Confluence: 57 (best board, but overkill + 2 tools)
-4. Azure DevOps: 57 (same, but even more technical)
-6. ClickUp: 56
-7. Trello: 55 (easy, but no docs)
 
-* scores are OUR estimate based on our situation, not facts. if we change the weights (e.g. code becomes way more important once we build the train) the order changes!
+| # | Tool | Score | Samenvatting |
+|---|---|---|---|
+| 1 | Notion | 67 | Beste allrounder: board + docs + delen |
+| 2 | Teams + Planner | 65 | Makkelijkst en al aanwezig, maar zwak board |
+| 3 | Jira + Confluence | 63 | Beste board, maar overkill en 2 tools |
+| 4 | GitHub | 62 | Beste voor bouwen/code, lastig voor niet-developers |
+| 5 | Azure DevOps | 57 | Zelfde als Jira, maar nog technischer |
+| 6 | Trello | 55 | Makkelijk, maar geen documentatie |
 
----
+De scores zijn mijn inschatting op basis van onze situatie, geen feiten. Als we de wegingen aanpassen (bijvoorbeeld als code veel belangrijker wordt zodra we de trein gaan bouwen), verandert de volgorde.
 
-## My take
+## Advies
 
-no single tool wins on everything, so probably a **combo of max 2**:
+Geen enkele tool wint op alles, dus de beste keuze is waarschijnlijk een combinatie van maximaal 2 tools.
 
-- **option A: Notion + GitHub**
-  - Notion = scrum board, stand-ups, beslissingenlog, feedbacklog, notulen, design rationale drafts
-  - GitHub = only the code/building part (train, arduino, unity) + backup of docs
-  - Teams stays for chat + the official word docs (we have to use it anyway)
-- **option B: GitHub + Teams** (what we already have)
-  - only works if EVERYONE is ok with learning github (ask the team first!)
-- Jira: I'd drop it. looks professional, but it's 2 tools (jira + confluence) and a lot of setup for 4 people, and the docs part (= most of our work) is the weakest.
+### Optie A: Notion + GitHub
 
-**to decide together:**
-1. is everyone comfortable with github? (if not → option A)
-2. does the docent/opdrachtgever need to see our board? (if yes → notion or teams, easy links)
-3. how much building will we actually do? (if a lot → github is a must for that part)
+- **Notion:** scrumboard, stand-ups, beslissingenlog, feedbacklog, notulen, concepten van de design rationale
+- **GitHub:** alleen het code-/bouwdeel (trein, Arduino, Unity) + back-up van de docs
+- **Teams** blijft voor de chat en de officiële versies van Word-documenten (dat moeten we toch gebruiken)
 
-* whatever we pick: write it down as a DECISION with the alternatives + why (= exactly this document) in the beslissingenlog. counts for the rubric!!
+### Optie B: GitHub + Teams
+
+Dit is wat we nu al hebben. Het werkt alleen als IEDEREEN bereid is GitHub te leren, dus vraag dat eerst aan het team.
+
+### Jira
+
+Advies: laten vallen. Het ziet er professioneel uit, maar het zijn 2 tools (Jira + Confluence) met veel inrichtwerk voor 4 personen, en het documentatiedeel (= het grootste deel van ons werk) is juist het zwakste punt.
+
+### Samen te beslissen
+
+1. Vindt iedereen GitHub prima? (Zo niet → optie A)
+2. Moet de docent/opdrachtgever ons board kunnen zien? (Zo ja → Notion of Teams, makkelijke links)
+3. Hoeveel gaan we echt bouwen? (Veel → dan is GitHub een must voor dat deel)
+
+Wat we ook kiezen: leg het vast als BESLISSING in de beslissingenlog, met de alternatieven en de onderbouwing (= precies dit document).
+
+Dit is belangrijk in de rubriek, dus ook handig om onze tops + downs van de ideeën als beslissing log te houden, zelfs als het nog een concept blijft.
+
+## Beslissing
+
+**Gekozen: Jira + Confluence.**
+
+**Waarom:** na het bekijken van de redenering hierboven bleek dat het hele team zich toch comfortabel voelt bij Jira, omdat iedereen er al ervaring mee heeft. Daardoor wegen de grootste nadelen uit het advies (de leercurve en twee tools moeten leren) voor ons veel minder zwaar. Dat zie je ook terug in de score: met "makkelijk voor heel team" op 4 komt Jira uit op 63 van de 90, de derde plek en vlak achter Notion en Teams. Jira scoort daarnaast het hoogst op het scrumboard, en dat is precies waar we de tool het meest voor nodig hebben.
+
+**Overwogen alternatieven en waarom niet:**
+
+| Alternatief | Waarom niet gekozen |
+|---|---|
+| Notion | Hoogste score, maar onbekend voor het team. Het risico is dat we de tool eerst moeten leren en hem daarna niet bijhouden. |
+| Teams + Planner | Heeft geen goede sprint-mogelijkheid (sprints/backlog zijn een premiumfunctie), terwijl het scrumboard ons belangrijkste criterium is. Teams blijft wel in gebruik voor chat en Word-documenten. |
+| GitHub | Te veel op code gericht. Het grootste deel van ons werk is onderzoek en documentatie. |
+| Trello en Azure DevOps | Onbekend voor een deel van het team. Ze zijn kort overwogen, maar niet gekozen omdat ze onbekend zijn. |
+
+*Datum beslissing: [invullen] · Besloten door: [teamleden invullen]*
