@@ -175,8 +175,8 @@ Notatie: **Type · SP · Prio · Helft · Due** (in Jira zit alles in sprint `2`
 **Waarom:** het onderzoeksplan is de basis van alles deze sprint, en de go/no-go van de docent hangt ervan af. Deelvragen, analyse-aanpak, kwaliteitscriteria en risico's zijn al gedaan in v0.6 (2-10); wat overblijft: de open opmerkingen in de andere hoofdstukken, de feedback van stakeholderbijeenkomst 1, en inleveren.
 **Let op:** volgens het lesoverzicht sluit het inleveren van de definitieve versie in week 44 (nog navragen bij de docent of dat klopt!). Wij mikken op af vóór de herfstvakantie.
 **Acceptatiecriteria:** alle open opmerkingen afgehandeld of bewust geparkeerd; feedback van 1 okt in het feedbacklog met reactie; hoofdvraag compleet; literatuurlijst gevuld; Word-versie = markdown; versie 1.0 ingeleverd.
-- [ ] Feedback stakeholderbijeenkomst 1 in feedbacklog zetten, per punt een reactie — `1h`
-  - Wat: alle feedback van stakeholderbijeenkomst 1 (1 okt) in het feedbacklog, per punt: overgenomen / aangepast / geparkeerd + reden. · Waarom: feedback telt alleen als zichtbaar is wat we ermee deden (PR4).
+- [ ] Feedback feedbacksessie (17-9) + stakeholderbijeenkomst 1 (1-10) in feedbacklog zetten, per punt een reactie — `1.5h`
+  - Wat: alle feedback van de feedbacksessie (17-9) en stakeholderbijeenkomst 1 (1-10) in het feedbacklog, per punt: overgenomen / aangepast / geparkeerd + reden. · Waarom: feedback telt alleen als zichtbaar is wat we ermee deden (PR4); de notulen van allebei staan nu in de map 28-9 tot 4-10.
 - [ ] Hoofdvraag afmaken + afstemmen op doelstelling en aantal contactmomenten — `1h`
   - Hoofdvraag afmaken en vaststellen; ook checken of hij past bij de doelstelling en de contactmomenten. · Waarom: zonder complete hoofdvraag is het plan niet af (OP1).
 - [ ] Bronvermelding notulen 23-9 en citaten opdrachtgever in de inleiding — `1h`
@@ -233,6 +233,17 @@ Notatie: **Type · SP · Prio · Helft · Due** (in Jira zit alles in sprint `2`
   - Wat: de data-games van Aliander/CMD bekijken + 1–2 voorbeelden van buiten de HAN zoeken. · Waarom: breder beeld van wat er al bestaat.
 - [ ] Analyse uitschrijven in het onderzoeksplan + sources — `2h`
   - Wat: de analyse als paragraaf in het onderzoeksplan zetten, met bronnen. · Waarom: de rubric wil dat het plan start vanuit een analyse van bestaande toepassingen.
+- [ ] Hoe werven andere hogescholen voor Data & AI? (1–2 voorbeelden) — `2h`
+  - Wat: 1–2 voorbeelden zoeken van hoe andere hogescholen werven voor Data & AI (of vergelijkbare richtingen). · Waarom: vraag uit de feedbacksessie (17-9): zijn de ideeën evidence based, en hoe doen andere opleidingen het?
+
+#### S2-52 · Selectie 48 ideeën → 3 concepten vastleggen in het beslissingenlog
+**Task · 1 SP · Medium · DS2a · Due 9 okt** · Labels: `documentatie` `op1` `pr1`
+**Waarom:** vraag uit de feedbacksessie (17-9): "waarom zijn deze drie de beste, waarom zijn de andere 45 afgevallen?" Die keuze staat nu nergens vastgelegd.
+**Acceptatiecriteria:** in het beslissingenlog staat hoe we van 48 naar 3 kwamen (criteria, afgevallen ideeën + waarom), met foto's van de brainstorm/crazy eights.
+- [ ] Foto's van brainstorm/crazy eights verzamelen — `0.5h`
+  - Wat: de foto's van de 48 ideeën (brainstorm, crazy eights) bij elkaar zoeken. · Waarom: bewijs van het proces, nodig voor het beslissingenlog en de DR.
+- [ ] Selectiecriteria reconstrueren + in beslissingenlog zetten — `1.5h`
+  - Wat: opschrijven op welke criteria we van 48 naar 3 gingen, en welke ideeën afvielen en waarom. · Waarom: zo kunnen we de vraag "waarom deze drie?" onderbouwd beantwoorden.
 
 ---
 
@@ -333,6 +344,8 @@ Notatie: **Type · SP · Prio · Helft · Due** (in Jira zit alles in sprint `2`
   - Wat: per doelgroep vergelijken, en bij elke aanname noteren: getoetst / nog te toetsen. · Waarom: laat zien wat we nu ECHT weten.
 - [ ] Conclusie uitschrijven voor het beslismoment — `1.5h`
   - Wat: een korte conclusie per concept voor het beslismoment. · Waarom: input voor de beslismatrix (S2-13).
+- [ ] Per concept noteren welke doelgroep het het meest aanspreekt — `1h`
+  - Wat: per concept bijhouden of het vooral MBO, havo, vwo of propedeuse aanspreekt. · Waarom: feedback stakeholders (1-10): de doelgroep is nog niet vastgesteld, en elk concept spreekt misschien een andere groep aan (bv. trein vs. zorgcontext/biometrie).
 
 #### S2-12 · Persona's / empathy maps bijwerken
 **Task · 3 SP · Medium · DS2a · Due 16 okt** · Labels: `ontwerp` `mbo` `havo-vwo` `propedeuse` `et3-communicatie`
@@ -359,6 +372,19 @@ Notatie: **Type · SP · Prio · Helft · Due** (in Jira zit alles in sprint `2`
 - [ ] Afspraak over verwijderen + bevestiging aan aanleverder vastleggen (uitvoeren na het project) — `0.5h`
   - Wat: vastleggen dat we de dataset na het project verwijderen en dat aan de aanleverder bevestigen. · Waarom: afspraak uit het onderzoeksplan.
 
+#### S2-51 · Oriëntatiereis + voor/tijdens/na het contactmoment in kaart brengen
+**Task · 3 SP · High · DS2a · Due 16 okt** · Labels: `onderzoek` `ontwerp` `deelvraag-3` `mbo` `havo-vwo` `propedeuse` `pr1`
+**Waarom:** Elisa (17-9): "breng de oriëntatiereis van de student in beeld; waar en wanneer zijn mensen bezig met oriënteren op een studie?" En de stakeholders (1-10): het "voor en na" de open dag (WhatsApp, nieuwtje, spoiler) staat nog niet concreet in ons stappenplan.
+**Acceptatiecriteria:** journey map van de oriëntatie (waar/wanneer/via wie oriënteren scholieren zich) + per contactmoment ideeën voor vóór, tijdens en na.
+- [ ] Info over de oriëntatie van studiekiezers opvragen bij de HAN — `1h`
+  - Wat: bij de HAN (voorlichting/marketing) vragen wat ze al weten over hoe studiekiezers zich oriënteren. · Waarom: tip van Elisa, de HAN heeft hier vast al informatie over.
+- [ ] Uitzoeken waar/wanneer scholieren zich oriënteren (+ vragen erover in het toetsplan) — `2h`
+  - Wat: deskresearch (decaan, open dag, studiekeuzesites, social media, ouders etc.) + een paar vragen hierover in de interviewguide/enquête (S2-08). · Waarom: een open dag is maar één moment; we moeten weten waar we mensen nog meer kunnen bereiken.
+- [ ] Journey map maken: oriëntatie → contactmoment → daarna — `2h`
+  - Wat: de reis van de studiekiezer in één overzicht zetten. · Waarom: maakt zichtbaar waar onze aanpak in past (deelvraag 3).
+- [ ] Per concept ideeën voor vóór en na het contactmoment — `1.5h`
+  - Wat: per concept bedenken wat er vóór (bv. teaser/nieuwtje/WhatsApp) en ná (bv. iets meenemen, follow-up) gebeurt. · Waarom: feedback stakeholders (1-10): dat staat nog niet in ons stappenplan.
+
 ---
 
 ### E4: Conceptkeuze
@@ -368,22 +394,25 @@ Notatie: **Type · SP · Prio · Helft · Due** (in Jira zit alles in sprint `2`
 #### S2-13 · Beslismatrix concepten
 **Task · 3 SP · Highest · DS2a · Due 16 okt** · Labels: `onderzoek` `deelvraag-4` `concept-algemeen` `op3`
 **Waarom:** met een beslismatrix is achteraf te volgen WAAROM we een concept kozen, en kiezen we niet op gevoel (OP3, beslissingenlog).
-**Criteria (voorstel, uit de feedback van de opdrachtgever):** bezoeker maakt/bouwt zelf iets · zelfstandig op te zetten door studenten/docenten · cross-over tussen ICT-richtingen · spreekt brede doelgroep aan (incl. meiden, niet alleen "nerds") · past bij contactmoment(en) · kosten/haalbaarheid · laat meer zien van AI dan alleen LLM's · reactie van de doelgroep (S2-11), etc.
+**Criteria (voorstel, uit de feedback van de opdrachtgever):** bezoeker maakt/bouwt zelf iets · zelfstandig op te zetten door studenten/docenten · cross-over tussen ICT-richtingen · spreekt brede doelgroep aan (incl. meiden, niet alleen "nerds") · past bij contactmoment(en) · kosten/haalbaarheid · laat meer zien van AI dan alleen LLM's · reactie van de doelgroep (S2-11) · laat zien dat Data & AI ook BOUWEN is · innovatief/baanbrekend, etc.
+**Let op:** "spreekt de doelgroep aan" krijgt het ZWAARSTE gewicht, haalbaarheid weegt minder (feedback stakeholders 1-10: "jullie kiezen nu vooral op wat technisch kan"; en Elisa 17-9: nu nog niet denken of het werkt).
 - [ ] Criteria + gewichten samen vaststellen — `2h`
-  - Wat: samen bepalen op welke criteria we de concepten scoren, en hoe zwaar elk criterium weegt. · Waarom: de criteria moeten vóór het scoren vastliggen, anders kies je ze (onbewust) bij je favoriet.
+  - Wat: samen bepalen op welke criteria we de concepten scoren, en hoe zwaar elk criterium weegt. · Waarom: de criteria moeten vóór het scoren vastliggen, anders kies je ze (onbewust) bij je favoriet. Doelgroep-aantrekkingskracht weegt het zwaarst (feedback 1-10)!
 - [ ] Scoren (ieder apart, daarna bespreken) — `2h`
   - Wat: iedereen scoort eerst alleen, daarna bespreken we de verschillen. · Waarom: zo neemt niet één mening het hele team mee.
 - [ ] Matrix + uitleg in het onderzoeksplan — `1h`
   - Wat: de matrix + uitleg in het onderzoeksplan zetten. · Waarom: de keuze moet te volgen zijn (OP3).
 
-#### S2-14 · Conceptkeuze + terugkoppeling opdrachtgever
-**Task · 2 SP · Highest · DS2a · Due 16 okt** · Labels: `stakeholder` `concept-algemeen` `pr1` `pr3`
-**Waarom:** de keuze moet expliciet gemaakt én vastgelegd worden, en de opdrachtgever moet weten welk concept het wordt voordat we gaan bouwen.
-**Acceptatiecriteria:** besluit in het beslissingenlog (welk concept / alternatieven / waarom / op basis van welke data); opdrachtgever via Teams op de hoogte.
+#### S2-14 · Concept + doelgroep kiezen + terugkoppeling opdrachtgever
+**Task · 3 SP · Highest · DS2a · Due 16 okt** · Labels: `stakeholder` `concept-algemeen` `pr1` `pr3`
+**Waarom:** feedback stakeholders (1-10): de keuze voor de trein was nog niet getest en de onderbouwing was generiek, en de doelgroep is nog niet vastgesteld. Concept en doelgroep hangen samen, dus we kiezen ze samen.
+**Acceptatiecriteria:** besluit in het beslissingenlog (welk concept + welke primaire doelgroep / alternatieven / waarom / op basis van welke data). De keuze steunt op doelgroepdata (S2-10/S2-11), NIET op algemene voordelen zoals "handig op de open dag". Opdrachtgever via Teams op de hoogte.
 - [ ] Besluitbespreking team — `2h`
   - Wat: met het hele team de keuze maken op basis van de matrix, de toetsresultaten en de quick scan. · Waarom: dit is HET beslismoment van DS2a.
 - [ ] Beslissingenlog + korte update naar opdrachtgever — `1h`
   - Wat: de keuze in het beslissingenlog (concept / alternatieven / waarom / welke data) + een update naar de opdrachtgever. · Waarom: beslissing zichtbaar, en de opdrachtgever weet waar we naartoe gaan.
+- [ ] Primaire doelgroep vastleggen (MBO / havo / vwo / propedeuse) — `1h`
+  - Wat: op basis van S2-11 vastleggen voor welke doelgroep we het gekozen concept uitwerken. · Waarom: zonder vaste doelgroep wordt het ontwerp te breed of juist te smal (feedback 1-10).
 
 #### S2-15 · Afstemming met Infra/SD over bestaande opstellingen op open dagen
 **Task · 2 SP · High · DS2a · Due 15 okt** · Labels: `stakeholder` `concept-algemeen` `open-dag` `pr3` `blocked-extern`
@@ -568,11 +597,13 @@ Notatie: **Type · SP · Prio · Helft · Due** (in Jira zit alles in sprint `2`
 #### S2-32 · Stakeholderanalyse bijwerken
 **Task · 2 SP · Medium · DS2a · Due 16 okt** · Labels: `stakeholder` `pr3`
 **Waarom:** sinds sprint 1 zijn er nieuwe stakeholders bijgekomen (Infra/SD, open-dag-organisatie etc.), en de rubric wil zien dat we belangen + conflicten zichtbaar maken (PR3).
-**Nieuwe/veranderde stakeholders om te checken:** Infra ('Hack je gek'), open-dag-organisatie, Arnoud (cijfers), Lectoraat iWDT, eerstejaars als testgroep, FabLab, etc.
+**Nieuwe/veranderde stakeholders om te checken:** Infra ('Hack je gek'), open-dag-organisatie, Arnoud (cijfers), Lectoraat iWDT, eerstejaars als testgroep, FabLab, andere afdelingen (bv. Automatics), etc.
 - [ ] Analyse bijwerken (belang, houding, macht/invloed, conflicten) — `2h`
   - Wat: per stakeholder belang, houding, macht/invloed en conflicten bijwerken. · Waarom: de analyse is van sprint 1 en klopt niet meer helemaal.
 - [ ] Per belangrijk onderzoeksresultaat noteren welke stakeholder het raakt (PR3) — `1h`
   - Wat: bij elk belangrijk onderzoeksresultaat noteren welke stakeholder het raakt. · Waarom: koppeling belangen ↔ onderzoeksresultaten = PR3 voldoende.
+- [ ] Andere afdelingen checken: kunnen we samenwerken? (bv. Automatics) — `0.5h`
+  - Wat: kijken welke andere afdelingen (naast Infra/SD) iets met ons idee kunnen, en of samenwerking zin heeft. · Waarom: vraag uit de feedbacksessie (17-9): "is er nagedacht over samenwerking met andere afdelingen?"
 
 #### S2-33 · Stakeholderbijeenkomst 2 voorbereiden (= sprintreview)
 **Story · 5 SP · Highest · DS2b · Due 12 nov** · Labels: `stakeholder` `pr3` `pr4` `et3-communicatie`
@@ -686,9 +717,9 @@ beschikbare uren = (aantal personen) × (projecturen per persoon per week) × (a
 
 | | SP | Uren |
 |---|---|---|
-| Gepland in DS2a | 73 | 143 |
+| Gepland in DS2a | 78 | 156.5 |
 | Beschikbaar (4 × 15 × 2 × 0,8) | n.v.t. | 96 |
-| **Verschil** | | **−47** |
+| **Verschil** | | **−60.5** |
 
 **DS2b**: nog niet plannen. De voorlopige schets komt op ± 72 SP / 160 uur (inclusief de fysieke bouwvariant), tegen 144 uur beschikbaar (4 × 15 × 3 × 0,8). Na de go/no-go opnieuw schatten.
 
