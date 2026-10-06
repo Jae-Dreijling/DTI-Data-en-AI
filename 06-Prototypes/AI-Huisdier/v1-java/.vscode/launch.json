@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AI Huisdier",
+            "request": "launch",
+            "mainClass": "App",
+            "console": "integratedTerminal",
+            "encoding": "UTF-8",
+            "vmArgs": "-Dstdout.encoding=UTF-8"
+        }
+    ]
+}

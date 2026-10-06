@@ -1,0 +1,408 @@
+<!doctype html>
+<!--
+  Ik wil niet dat het aanvoelt alsof de eerste versie de prullenbak in is gegaan,
+  dus ik heb comments achtergelaten waar ik dingen uit de oude versie heb overgenomen en bewerkt! :)
+  De namen, ascii-art en beschrijvingen zitten er nog niet in, maar die kunnen er later prima weer bij!
+-->
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leer de AI raden</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-4">
+
+  <h1>Leer de AI raden</h1>
+  <p class="text-secondary">De AI raadt waar jij aan denkt. Zit hij ernaast? Dan leer jij het hem!</p>
+
+  <div class="d-flex gap-2 align-items-center mb-3">
+    <label for="thema">Thema:</label>
+    <select id="thema" class="form-select w-auto"></select>
+    <button id="wis" class="btn btn-outline-secondary">Geheugen wissen</button>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="card"><div class="card-body text-center" id="spel"></div></div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-body">
+        <h2 class="h4">Beslisboom</h2>
+        <p id="stats" class="text-secondary"></p>
+        <div id="boom"></div>
+        <h2 class="h4 mt-3">Als Python-code</h2>
+        <pre id="code" class="bg-body-secondary p-2 rounded"></pre>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="card card-body">
+        <h2 class="h4">Kladblok</h2>
+        <p class="text-secondary">Typ hier zelf een boom om te testen. Een vraag eindigt op een ?, daaronder (inspringen) een ja: en een nee:. Wordt niet bewaard.</p>
+        <textarea id="kladblok" class="form-control font-monospace" rows="8" spellcheck="false"></textarea>
+        <p class="text-danger mt-2" id="kladblok-fout"></p>
+        <div>
+          <button id="probeer" class="btn btn-primary">Probeer deze boom</button>
+          <button id="random" class="btn btn-outline-primary">Willekeurige boom</button>
+          <button id="kopieer" class="btn btn-outline-secondary">Huidige boom hierin zetten</button>
+          <button id="terug" class="btn btn-outline-secondary">Terug naar de echte boom</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ============================================================
+// THEMA'S: hier kun je zelf dingen veranderen of toevoegen!
+// Elk thema begint met één vraag en twee antwoorden.
+// De rest leert de AI van de leerlingen.
+// ============================================================
+const THEMAS = {
+  // [uit v1] dieren uit generatePet(), de vacht-vraag is eigenlijk zoogdier of vis
+  dieren:  { naam: "Huisdieren", woord: "huisdier",
+             start: { vraag: "Heeft het vacht?", ja: { ding: "Kat" }, nee: { ding: "Goudvis" } } },
+  vervoer: { naam: "Vervoer", woord: "vervoermiddel",
+             start: { vraag: "Heeft het wielen?", ja: { ding: "Fiets" }, nee: { ding: "Vliegtuig" } } },
+  eten:    { naam: "Eten", woord: "eten",
+             start: { vraag: "Is het zoet?", ja: { ding: "IJsje" }, nee: { ding: "Pizza" } } }
+};
+
+// Voor de "Willekeurige boom"-knop in het kladblok.
+// Elk ding heeft eigenschappen, zo klopt de random boom altijd.
+// Let op: geen twee dingen met precies dezelfde eigenschappen!
+const VOORBEELDEN = {
+  dieren: {
+    vragen: { vacht: "Heeft het vacht?", vliegt: "Kan het vliegen?", water: "Leeft het in het water?",
+              blaft: "Kan het blaffen?", klein: "Past het in je hand?", poten: "Heeft het vier poten?",
+              buiten: "Woont het meestal buiten?", groot: "Is het groter dan jij?" },
+    dingen: { Hond: ["vacht", "blaft", "poten"], Kat: ["vacht", "poten"], Hamster: ["vacht", "klein", "poten"],
+              Konijn: ["vacht", "poten", "buiten"], Paard: ["vacht", "poten", "buiten", "groot"],
+              Parkiet: ["vliegt", "klein"], Papegaai: ["vliegt"], Goudvis: ["water", "klein"],
+              Schildpad: ["poten", "buiten"], Slang: [] }
+  },
+  vervoer: {
+    vragen: { wielen: "Heeft het wielen?", vliegt: "Kan het vliegen?", water: "Gaat het over water?",
+              motor: "Heeft het een motor?", groot: "Passen er meer dan 10 mensen in?",
+              spoor: "Rijdt het over rails?", trappen: "Moet je zelf trappen?" },
+    dingen: { Fiets: ["wielen", "trappen"], Step: ["wielen"], Auto: ["wielen", "motor"],
+              Bus: ["wielen", "motor", "groot"], Trein: ["wielen", "motor", "groot", "spoor"],
+              Vliegtuig: ["vliegt", "motor", "groot"], Helikopter: ["vliegt", "motor"],
+              Boot: ["water", "motor"], Kano: ["water"] }
+  },
+  eten: {
+    vragen: { zoet: "Is het zoet?", warm: "Eet je het warm?", koud: "Moet het in de vriezer?",
+              fruit: "Is het fruit?", geel: "Is het geel?", deeg: "Zit er deeg in?",
+              hand: "Eet je het met je handen?" },
+    dingen: { IJsje: ["zoet", "koud", "hand"], Taart: ["zoet", "deeg"], Appel: ["zoet", "fruit", "hand"],
+              Banaan: ["zoet", "fruit", "hand", "geel"], Pizza: ["warm", "deeg", "hand"],
+              Patat: ["warm", "hand"], Soep: ["warm"], Sushi: [], Pannenkoek: ["zoet", "warm", "deeg"] }
+  }
+};
+
+let thema;          // het gekozen thema
+// [uit v1] was de switch in generatePet(), nu kan de leerling hem zelf laten groeien
+let boom;           // de beslisboom: { vraag, ja, nee } of { ding }
+let huidig;         // waar we nu zijn in de boom
+let pad = [];       // gestelde vragen + antwoorden (voor het "waarom")
+let fase = "start";
+let nieuw = [];     // knopen die de AI net geleerd heeft (groen)
+let nieuwDing = "";
+let nieuweVraag = "";
+let kladblok = false; // true = we spelen met een boom uit het kladblok, niet bewaren
+
+// Tekst van gebruikers veilig in HTML zetten
+function veilig(tekst) {
+  const div = document.createElement("div");
+  div.textContent = tekst;
+  return div.innerHTML;
+}
+
+// ---------- Opslaan en laden (per apparaat) ----------
+function laad(key) {
+  thema = THEMAS[key];
+  thema.key = key;
+  boom = null;
+  try { boom = JSON.parse(localStorage.getItem("ai-raden-" + key)); } catch (e) {}
+  if (!boom) boom = JSON.parse(JSON.stringify(thema.start));
+  kladblok = false;
+  nieuw = [];
+  nieuweRonde();
+}
+
+function bewaar() {
+  if (kladblok) return; // kladblok-boom niet opslaan
+  try { localStorage.setItem("ai-raden-" + thema.key, JSON.stringify(boom)); } catch (e) {}
+}
+
+// ---------- Het spel ----------
+// java's askAgain(), gewoon opnieuw spelen
+function nieuweRonde() {
+  huidig = boom;
+  pad = [];
+  fase = "start";
+  toon();
+}
+
+// Java's was scanner.nextInt(), nu knoppen dus geen crash meer bij letters
+function antwoord(ja) {
+  pad.push(huidig.vraag + " → " + (ja ? "ja" : "nee"));
+  huidig = ja ? huidig.ja : huidig.nee;
+  fase = huidig.ding ? "raad" : "vraag";
+  toon();
+}
+
+// De foute gok wordt een nieuwe vraag met twee antwoorden
+function leer(antwoordVoorNieuw) {
+  const nieuwBlad = { ding: nieuwDing };
+  const oudBlad = { ding: huidig.ding };
+  delete huidig.ding;
+  huidig.vraag = nieuweVraag;
+  huidig.ja = antwoordVoorNieuw ? nieuwBlad : oudBlad;
+  huidig.nee = antwoordVoorNieuw ? oudBlad : nieuwBlad;
+  nieuw = [huidig, nieuwBlad, oudBlad];
+  bewaar();
+  fase = "geleerd";
+  toon();
+}
+
+function kentAl(knoop, naam) {
+  if (knoop.ding) return knoop.ding.toLowerCase() === naam.toLowerCase();
+  return kentAl(knoop.ja, naam) || kentAl(knoop.nee, naam);
+}
+
+function tel(knoop) {
+  if (knoop.ding) return 1;
+  return tel(knoop.ja) + tel(knoop.nee);
+}
+
+// ---------- Scherm: het spel ----------
+function toonSpel() {
+  const spel = document.getElementById("spel");
+  const gok = huidig.ding;
+  let html = "";
+
+  // [uit v1] welkomstscherm uit main()
+  if (fase === "start") {
+    html = `<h2>Denk aan een ${thema.woord}...</h2>
+      <p>Niet zeggen! Ik ga het raden met ja/nee-vragen.</p>
+      <button class="btn btn-primary m-1" onclick="fase = huidig.ding ? 'raad' : 'vraag'; nieuw = []; toon()">Ik heb er een!</button>`;
+  }
+  else if (fase === "vraag") {
+    html = `<h2>${veilig(huidig.vraag)}</h2>
+      <button class="btn btn-primary m-1" onclick="antwoord(true)">Ja</button>
+      <button class="btn btn-primary m-1" onclick="antwoord(false)">Nee</button>`;
+  }
+  // [uit v1] "JOUW AI HUISDIER" + "WAAROM DIT DIER?", nu met de route door de boom
+  else if (fase === "raad") {
+    html = `<h2>Is het een ${veilig(gok)}?</h2>
+      <button class="btn btn-primary m-1" onclick="fase = 'goed'; toon()">Ja!</button>
+      <button class="btn btn-primary m-1" onclick="fase = 'leer-ding'; toon()">Nee</button>
+      <p><b>Waarom denk ik dat?</b><br>${pad.map(veilig).join("<br>")}</p>`;
+  }
+  else if (fase === "goed") {
+    html = `<h2>Geraden! 🎉</h2>
+      <p>Kun je me verslaan met een ${thema.woord} die ik nog niet ken?</p>
+      <button class="btn btn-primary m-1" onclick="nieuweRonde()">Nog een ronde</button>`;
+  }
+  else if (fase === "leer-ding") {
+    html = `<h2>Oei, ik zat ernaast!</h2>
+      <p>Aan welk ${thema.woord} dacht je?</p>
+      <form onsubmit="return stuurDing()">
+        <input id="invoer" class="form-control" maxlength="30" autocomplete="off" placeholder="bijv. Hond">
+        <p class="text-danger mt-2" id="fout"></p>
+        <button class="btn btn-primary mt-2">Volgende</button>
+      </form>`;
+  }
+  else if (fase === "leer-vraag") {
+    html = `<h2>Wat is het verschil?</h2>
+      <p>Bedenk een ja/nee-vraag die een <b>${veilig(nieuwDing)}</b> en een <b>${veilig(gok)}</b> uit elkaar houdt.</p>
+      <form onsubmit="return stuurVraag()">
+        <input id="invoer" class="form-control" maxlength="60" autocomplete="off" placeholder="bijv. Kan het blaffen?">
+        <p class="text-danger mt-2" id="fout"></p>
+        <button class="btn btn-primary mt-2">Volgende</button>
+      </form>`;
+  }
+  else if (fase === "leer-antwoord") {
+    html = `<h2>${veilig(nieuweVraag)}</h2>
+      <p>Wat is het antwoord voor een <b>${veilig(nieuwDing)}</b>?</p>
+      <button class="btn btn-primary m-1" onclick="leer(true)">Ja</button>
+      <button class="btn btn-primary m-1" onclick="leer(false)">Nee</button>`;
+  }
+  else if (fase === "geleerd") {
+    html = `<h2>Dankjewel, ik heb iets geleerd! 🧠</h2>
+      <p>Jouw vraag staat nu in de boom en in de code (groen). Volgende keer raad ik een ${veilig(nieuwDing)} wél.</p>
+      <button class="btn btn-primary m-1" onclick="nieuweRonde()">Test me: nog een ronde</button>`;
+  }
+
+  spel.innerHTML = html;
+  const invoer = document.getElementById("invoer");
+  if (invoer) invoer.focus();
+}
+
+// ---------- Invoer controleren ----------
+function stuurDing() {
+  const tekst = document.getElementById("invoer").value.trim();
+  const fout = document.getElementById("fout");
+  if (tekst.length < 2) {
+    fout.textContent = "Typ eerst wat het was.";
+  } else if (tekst.toLowerCase() === huidig.ding.toLowerCase()) {
+    fout.textContent = "Dat was mijn gok! Dan had ik het toch goed?";
+  } else if (kentAl(boom, tekst)) {
+    fout.textContent = "Die ken ik al! Klopten al je antwoorden? Probeer anders een nieuwe ronde.";
+  } else {
+    nieuwDing = tekst.charAt(0).toUpperCase() + tekst.slice(1);
+    fase = "leer-vraag";
+    toon();
+  }
+  return false; // pagina niet herladen
+}
+
+function stuurVraag() {
+  let tekst = document.getElementById("invoer").value.trim();
+  if (tekst.length < 5) {
+    document.getElementById("fout").textContent = "Typ een hele vraag, bijv. \"Kan het zwemmen?\"";
+  } else {
+    if (!tekst.endsWith("?")) tekst += "?";
+    nieuweVraag = tekst.charAt(0).toUpperCase() + tekst.slice(1);
+    fase = "leer-antwoord";
+    toon();
+  }
+  return false;
+}
+
+// ---------- Scherm: boom en code ----------
+function boomHTML(knoop) {
+  const klasse = nieuw.includes(knoop) ? "bg-success-subtle" : "";
+  if (knoop.ding) {
+    return `<span class="${klasse}">${veilig(knoop.ding)}</span>`;
+  }
+  return `<b class="${klasse}">${veilig(knoop.vraag)}</b>
+    <ul class="list-unstyled ps-4 border-start">
+      <li>ja: ${boomHTML(knoop.ja)}</li>
+      <li>nee: ${boomHTML(knoop.nee)}</li>
+    </ul>`;
+}
+
+function codeHTML(knoop, inspring) {
+  const klasse = nieuw.includes(knoop) ? "bg-success-subtle" : "";
+  const ruimte = "    ".repeat(inspring);
+  if (knoop.ding) {
+    return `<span class="${klasse}">${ruimte}return "${veilig(knoop.ding)}"</span>\n`;
+  }
+  return `<span class="${klasse}">${ruimte}if ja("${veilig(knoop.vraag)}"):</span>\n`
+    + codeHTML(knoop.ja, inspring + 1)
+    + `<span class="${klasse}">${ruimte}else:</span>\n`
+    + codeHTML(knoop.nee, inspring + 1);
+}
+
+function toon() {
+  toonSpel();
+  document.getElementById("boom").innerHTML = boomHTML(boom);
+  document.getElementById("code").innerHTML = "def raad():\n" + codeHTML(boom, 1);
+  document.getElementById("stats").textContent = "De AI kent nu " + tel(boom) + " dingen."
+    + (kladblok ? " (kladblok, wordt niet bewaard)" : "");
+}
+
+// ---------- Kladblok: zelf een nep-boom uittypen ----------
+// Boom -> tekst, zodat je de huidige boom in het kladblok kan zetten
+function boomNaarTekst(knoop, diepte, voor) {
+  const regel = "  ".repeat(diepte) + voor + (knoop.ding || knoop.vraag) + "\n";
+  if (knoop.ding) return regel;
+  return regel + boomNaarTekst(knoop.ja, diepte + 1, "ja: ") + boomNaarTekst(knoop.nee, diepte + 1, "nee: ");
+}
+
+// Tekst -> boom. Gooit een foutmelding als de boom niet klopt
+function tekstNaarBoom(tekst) {
+  const regels = tekst.split("\n")
+    .filter(r => r.trim() !== "")
+    .map(r => ({ diepte: r.length - r.trimStart().length, tekst: r.trim() }));
+  let i = 0;
+
+  function lees() {
+    const r = regels[i++];
+    const t = r.tekst.replace(/^(ja|nee)\s*:\s*/i, "");
+    if (!t.endsWith("?")) return { ding: t };
+
+    const ja = regels[i];
+    if (!ja || !/^ja\s*:/i.test(ja.tekst) || ja.diepte <= r.diepte) {
+      throw `Onder "${t}" moet een ingesprongen regel met "ja:" komen.`;
+    }
+    const jaKnoop = lees();
+    const nee = regels[i];
+    if (!nee || !/^nee\s*:/i.test(nee.tekst) || nee.diepte !== ja.diepte) {
+      throw `"${t}" mist een "nee:" (even ver ingesprongen als de "ja:").`;
+    }
+    return { vraag: t, ja: jaKnoop, nee: lees() };
+  }
+
+  if (regels.length === 0) throw "Het kladblok is leeg.";
+  const nieuweBoom = lees();
+  if (i < regels.length) throw `Regel "${regels[i].tekst}" hoort nergens bij.`;
+  return nieuweBoom;
+}
+
+const kladblokVak = document.getElementById("kladblok");
+const kladblokFout = document.getElementById("kladblok-fout");
+
+document.getElementById("probeer").onclick = () => {
+  try {
+    boom = tekstNaarBoom(kladblokVak.value);
+    kladblok = true;
+    kladblokFout.textContent = "";
+    nieuw = [];
+    nieuweRonde();
+  } catch (fout) {
+    kladblokFout.textContent = fout;
+  }
+};
+document.getElementById("kopieer").onclick = () => {
+  kladblokVak.value = boomNaarTekst(boom, 0, "");
+  kladblokFout.textContent = "";
+};
+document.getElementById("terug").onclick = () => laad(thema.key);
+
+// Random boom: kies 3 tot 6 dingen, splits ze steeds met een vraag die echt iets splitst
+function randomBoom(dingen, vb) {
+  if (dingen.length === 1) return { ding: dingen[0] };
+  const goedeVragen = Object.keys(vb.vragen).filter(v => {
+    const ja = dingen.filter(d => vb.dingen[d].includes(v)).length;
+    return ja > 0 && ja < dingen.length;
+  });
+  const v = goedeVragen[Math.floor(Math.random() * goedeVragen.length)];
+  return {
+    vraag: vb.vragen[v],
+    ja: randomBoom(dingen.filter(d => vb.dingen[d].includes(v)), vb),
+    nee: randomBoom(dingen.filter(d => !vb.dingen[d].includes(v)), vb)
+  };
+}
+
+document.getElementById("random").onclick = () => {
+  const vb = VOORBEELDEN[thema.key];
+  const alles = Object.keys(vb.dingen).sort(() => Math.random() - 0.5);
+  const aantal = 3 + Math.floor(Math.random() * 4);
+  kladblokVak.value = boomNaarTekst(randomBoom(alles.slice(0, aantal), vb), 0, "");
+  document.getElementById("probeer").click(); // meteen spelen
+};
+
+// ---------- Start ----------
+const keuze = document.getElementById("thema");
+for (const key in THEMAS) {
+  keuze.innerHTML += `<option value="${key}">${THEMAS[key].naam}</option>`;
+}
+keuze.onchange = () => laad(keuze.value);
+
+document.getElementById("wis").onclick = () => {
+  if (!confirm("De AI vergeet alles wat hij bij dit thema geleerd heeft. Zeker weten?")) return;
+  try { localStorage.removeItem("ai-raden-" + thema.key); } catch (e) {}
+  laad(thema.key);
+};
+
+laad("dieren");
+kladblokVak.value = boomNaarTekst(boom, 0, "");
+</script>
+</body>
+</html>
