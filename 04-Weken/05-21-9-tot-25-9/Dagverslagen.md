@@ -57,7 +57,7 @@
 
 ---
 
-## Dag: 23-9-2026 (wo) · Week 39 · Sprint [nr]
+## Dag: 23-9-2026 (wo) · Week 39 · Sprint 1
 
 **Aanwezig / wie deed wat:**
 - Jae Dreijling (projectteam): notulen en verslaglegging opdrachtgeversgesprek
@@ -82,50 +82,51 @@
 
 ---
 
-## Dag: 24-9-2026 (do) · Week 39 · Sprint [nr]
+## Dag: 24-9-2026 (do) · Week 39 · Sprint 1
 
 **Aanwezig / wie deed wat:**
-- [naam]: [bijdrage]
+- Jae Dreijling: notulen 23-9 uitgewerkt, plan voor de lessen van vandaag opgesteld, onderzoeksplan bijgewerkt naar v0.4 en omgezet naar markdown, dagelijkse documentatiecheck + weekmappen met templates (dagverslag/weekcheck) opgezet
+- Team: LES Onderzoeksmethoden CMD/ICT + Interview · LES Stakeholderanalyse, UX mapping, personas, mindsets
 
-**Vraag waar we vandaag aan werkten:** (welke deelvraag, bv. A1)
-**Aanpak:** (methode + waarom deze)
-**Resultaat:** (wat kwam eruit; link naar foto/bestand)
-**Conclusie:** (wat betekent het voor het ontwerp/plan)
-**Nieuwe vraag:**
+**Vraag waar we vandaag aan werkten:** Hoe verwerken we de uitkomsten van het opdrachtgeversgesprek (23-9) in het onderzoeksplan, en met welke onderzoeksmethoden beantwoorden we de deelvragen?
+**Aanpak:** De notulen van 23-9 per onderdeel van het onderzoeksplan vertaald naar concrete wijzigingen (v0.3 → v0.4). Als voorbereiding op de methodenles de deelvragen (blokken A/B/C) gekoppeld aan de vijf strategieën uit ICT Research Methods (Library, Field, Lab, Showroom, Workshop), met per methode een waarom. Vóór de stakeholderles fase I van het template, een top 5 stakeholders, proto-persona's en mindsets voorbereid, zodat de lestijd naar de analyse zelf kon.
+**Resultaat:** [Plan voor 24-9](Overleggen/2026-09-24-Plan.md) (wijzigingen per hoofdstuk, conceptdoelstelling, concepthoofdvraag, deelvragentabel, conceptinterviewguide, voorzet stakeholderanalyse); onderzoeksplan v0.4; [Dagelijkse documentatiecheck](../../01-Project/Dagelijkse-Documentatiecheck-DTI.md) + templates per week.
+**Conclusie:** Wat de opdrachtgever zei is hún beeld, nog niet dat van de doelgroep. De aannames (AI = ChatGPT, angst voor banenverlies, onduidelijk wat Data & AI is) moeten dus nog getoetst worden bij scholieren en eerstejaars. Het AI-huisdier lijkt op papier het best te passen bij de randvoorwaarden (zelfmaak-element, zelfstandig te gebruiken, inzetbaar op meerdere contactmomenten), maar de keuze is aan het team.
+**Nieuwe vraag:** Welk beeld hebben HAVO-/MBO-scholieren en eerstejaars zelf van Data & AI, en welke misvattingen spelen daarbij?
 
-**Beslissingen:** (wat / alternatieven / waarom / op basis van)
-**Feedback ontvangen:** (van wie / wat / wat doen we ermee of waarom parkeren)
-**Contact met stakeholders:** (wie / kern / actiepunten)
-**Ethiek/risico's gezien:**
-**Bronnen toegevoegd:**
-**Beeld opgeslagen:** (bestandsnamen)
+**Beslissingen:** Voorstel: het onderzoeksplan naast Word ook als markdown in de repo bijhouden, zodat wijzigingen per versie terug te zien zijn. Documentatie per lesweek in een eigen map (dagverslagen + weekcheck).
+**Feedback ontvangen:** (geen nieuwe feedback vastgelegd)
+**Contact met stakeholders:** Geen. Actiepunten gepland voor vr–ma: Anhoud/Arnoud (instroomcijfers), curriculum-briefing voorstellen in Teams, Erwin Volmering + bestaande data-games, Excel-lijst schoolvoorlichtingen opvragen, notulen naar de opdrachtgever.
+**Ethiek/risico's gezien:** Interviews met minderjarigen: onder 16 is toestemming van ouders nodig, interviews anonimiseren en vastleggen hoe opnames bewaard worden. Biometrie (concept 3) gaat over bijzondere persoonsgegevens (art. 9 AVG).
+**Bronnen toegevoegd:** ICT Research Methods (ictresearchmethods.nl), CMD Methods Pack (cmdmethods.nl), [Notulen 23-09-2026](Overleggen/2026-09-23-Notulen.md)
+**Beeld opgeslagen:** han-titelpagina-afbeelding.jpg (titelpagina onderzoeksplan)
 
-**Mijn reflectie (1–3 zinnen):** wat deed ik, waarom zo, wat leer ik ervan?
+**Mijn reflectie (1–3 zinnen):** Ik heb de lessen vooraf voorbereid met onze eigen casus, zodat we in de les aan echte deelvragen en stakeholders konden werken in plaats van aan een oefening. Het opzetten van de documentatiecheck kwam voort uit de rubric: die beoordeelt wat zichtbaar is, dus vastleggen moet een dagelijkse gewoonte worden.
 
-**Bijgewerkt vandaag:** [ ] Onderzoeksplan (+ versiebeheer) [ ] Beslissingenlog [ ] Feedbacklog [ ] Stakeholderanalyse [ ] Bronnenlijst [ ] Beeldmap
+**Bijgewerkt vandaag:** [x] Onderzoeksplan (+ versiebeheer) [ ] Beslissingenlog [ ] Feedbacklog [ ] Stakeholderanalyse [x] Bronnenlijst [x] Beeldmap
 
 ---
 
-## Dag: 25-9-2026 (vr) · Week 39 · Sprint [nr]
+## Dag: 25-9-2026 (vr) · Week 39 · Sprint 1
 
 **Aanwezig / wie deed wat:**
-- [naam]: [bijdrage]
+- Bart Ressing: onderzoeksplan doorgenomen, opmerkingen geplaatst en tekst aangevuld (v0.5)
 
-**Vraag waar we vandaag aan werkten:** (welke deelvraag, bv. A1)
-**Aanpak:** (methode + waarom deze)
-**Resultaat:** (wat kwam eruit; link naar foto/bestand)
-**Conclusie:** (wat betekent het voor het ontwerp/plan)
-**Nieuwe vraag:**
+**Vraag waar we vandaag aan werkten:** Klopt het onderzoeksplan (v0.4) inhoudelijk en taalkundig, en wat ontbreekt er nog?
+**Aanpak:** Review door een teamgenoot die het niet zelf schreef: opmerkingen direct in het document geplaatst.
+**Resultaat:** Onderzoeksplan v0.5 met opmerkingen, o.a.: een afkortingenlijst toevoegen, de zin over de vier wervingsmomenten en doelgroepen leest niet lekker, onduidelijke afkorting ('ITVES', bleek een typefout voor INVEST), en de vraag of een wens van de opdrachtgever die niet past bij de minor ook mag vervallen.
+**Conclusie:** Het plan is inhoudelijk compleet genoeg om op verder te bouwen, maar de inleiding en begrippen moeten nog strakker.
+**Nieuwe vraag:** Mogen we een "harde eis" van de opdrachtgever laten vallen als die botst met wat de minor van ons vraagt?
 
-**Beslissingen:** (wat / alternatieven / waarom / op basis van)
-**Feedback ontvangen:** (van wie / wat / wat doen we ermee of waarom parkeren)
-**Contact met stakeholders:** (wie / kern / actiepunten)
-**Ethiek/risico's gezien:**
-**Bronnen toegevoegd:**
-**Beeld opgeslagen:** (bestandsnamen)
+**Beslissingen:** (geen)
+**Feedback ontvangen:** Van Bart (teamgenoot), zie Resultaat. Verwerkt op 29-9.
+**Contact met stakeholders:** (geen)
+**Ethiek/risico's gezien:** (geen)
+**Bronnen toegevoegd:** (geen)
+**Beeld opgeslagen:** (geen)
 
-**Mijn reflectie (1–3 zinnen):** wat deed ik, waarom zo, wat leer ik ervan?
+**Mijn reflectie (1–3 zinnen):** Een frisse blik van iemand anders vangt dingen die ik zelf niet meer zie, zoals een typefout die ik al dagen overlas. Goed om dit vaker bewust zo te doen.
 
-**Bijgewerkt vandaag:** [ ] Onderzoeksplan (+ versiebeheer) [ ] Beslissingenlog [ ] Feedbacklog [ ] Stakeholderanalyse [ ] Bronnenlijst [ ] Beeldmap
+**Bijgewerkt vandaag:** [x] Onderzoeksplan (+ versiebeheer) [ ] Beslissingenlog [ ] Feedbacklog [ ] Stakeholderanalyse [ ] Bronnenlijst [ ] Beeldmap
 
 ---
