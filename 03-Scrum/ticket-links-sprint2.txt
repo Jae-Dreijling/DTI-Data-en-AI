@@ -1,0 +1,147 @@
+ticket links om toe te voegen in jira:
+(in jira hoef je maar één kant toe te voegen: als je bij A "blocks B" zet, krijgt B vanzelf "is blocked by A")
+(gebruikt: "blocks" = moet eerst af / moet ervoor, "relates to" = hangt samen maar hoeft niet in volgorde)
+
+onderzoeksplan afmaken:
+- SCRUM-41 blocks SCRUM-44 (de bronnen van de notulen 23-9 moeten in de literatuurlijst)
+- SCRUM-42 blocks SCRUM-44 (de bronnen van het theoretisch kader moeten in de literatuurlijst)
+- SCRUM-60 blocks SCRUM-44 (de bronnen van de analyse bestaande toepassingen moeten in de literatuurlijst)
+- SCRUM-44 blocks SCRUM-46 (de laatste rubric-check pas doen als de literatuurlijst er staat. let op: 46 staat al in review!)
+
+sprintreview & retro sprint 1:
+- SCRUM-49 blocks SCRUM-51 (zonder retro geen retropunten om om te zetten. let op: 49 heeft deadline 26-10, maar 51 heeft deadline 25-10, dat klopt niet!)
+- SCRUM-49 relates to SCRUM-50 (de retropunten horen ook in het DR-blok van sprint 1)
+
+analyse bestaande toepassingen:
+- SCRUM-55 blocks SCRUM-59 (eerst de data-games opvragen, dan pas analyseren)
+- SCRUM-57 blocks SCRUM-60 ('Hack je gek' moet in de analyse)
+- SCRUM-58 blocks SCRUM-60 (de huidige workshop moet in de analyse)
+- SCRUM-59 blocks SCRUM-60 (de data-games moeten in de analyse)
+- SCRUM-61 blocks SCRUM-60 (andere hogescholen moeten in de analyse)
+  (let op: 60 staat al in review, terwijl 57/58/59/61 nog op to do staan. ofwel 60 terugzetten, ofwel aanvullen als die af zijn)
+
+selectie 48 -> 3:
+- SCRUM-62 relates to SCRUM-63 (de foto's horen bij de selectiecriteria in het beslissingenlog)
+
+toetsplan + toetsmateriaal -> concepttoets:
+- SCRUM-70 blocks SCRUM-71 (de interviewvragen moeten de aannames toetsen)
+- SCRUM-70 blocks SCRUM-72 (de enquête ook)
+- SCRUM-91 relates to SCRUM-71 (vragen over oriëntatie moeten in de interviewguide)
+- SCRUM-91 relates to SCRUM-72 (en eventueel in de enquête)
+- SCRUM-71 blocks SCRUM-77 (geen sessies zonder interviewguide)
+- SCRUM-72 blocks SCRUM-77 (geen sessies zonder enquête)
+- SCRUM-74 blocks SCRUM-77 (storyboard trein nodig in de sessie)
+- SCRUM-75 blocks SCRUM-77 (storyboard AI-huisdier nodig in de sessie)
+- SCRUM-76 blocks SCRUM-77 (storyboard biometrie nodig in de sessie)
+- SCRUM-113 blocks SCRUM-77 (toestemmingsformulier moet vóór de eerste toets af zijn)
+- SCRUM-66 blocks SCRUM-77 (testpersonen via schoolvoorlichtingen)
+- SCRUM-67 blocks SCRUM-77 (testpersonen via eerstejaarsgroepen)
+- SCRUM-68 relates to SCRUM-77 (eigen netwerk is back-up, dus niet echt blocking)
+- SCRUM-69 relates to SCRUM-77 (overzicht wie/wanneer/waar van de sessies)
+- SCRUM-122 blocks SCRUM-77 (mini-prototype trein = testmateriaal in de concepttoets)
+- SCRUM-124 blocks SCRUM-77 (mini-prototype AI-huisdier = testmateriaal)
+- SCRUM-126 blocks SCRUM-77 (mini-prototype biometrie = testmateriaal)
+- SCRUM-77 blocks SCRUM-78 (eerst sessie, dan notities uitwerken)
+- SCRUM-121 relates to SCRUM-78 (foto's van de sessies = beeldmateriaal DS2a)
+
+toetsresultaten analyseren:
+- SCRUM-73 blocks SCRUM-79 (analyse-aanpak moet vastliggen vóór we gaan labelen)
+- SCRUM-78 blocks SCRUM-79 (uitgewerkte notities nodig om te labelen)
+- SCRUM-79 blocks SCRUM-80 (vergelijking per doelgroep komt uit de clusters)
+- SCRUM-70 blocks SCRUM-80 (de aannamelijst moet bestaan om hem bij te werken)
+- SCRUM-79 blocks SCRUM-81 (conclusie komt uit de clusters)
+- SCRUM-80 blocks SCRUM-81 (conclusie gebruikt de vergelijking per doelgroep)
+- SCRUM-79 blocks SCRUM-82 (welke doelgroep per concept komt uit de toetsdata)
+
+persona's / empathy maps:
+- SCRUM-79 blocks SCRUM-83 (persona's op basis van de toetsdata)
+- SCRUM-83 blocks SCRUM-84 (eerst persona, dan koppelen aan contactmoment)
+- SCRUM-92 relates to SCRUM-84 (journey map en contactmomenten horen bij elkaar)
+
+dataset analyseren:
+- SCRUM-52 blocks SCRUM-85 (eerst checken of de cijfers van Arnoud bruikbaar zijn)
+- SCRUM-85 blocks SCRUM-86 (eerst dataset ontvangen + afspraken, dan checken op herleidbare gegevens)
+- SCRUM-86 blocks SCRUM-87 (pas analyseren als hij geanonimiseerd is)
+- SCRUM-87 blocks SCRUM-88 (kernbevindingen komen uit de analyse)
+- SCRUM-85 relates to SCRUM-89 (afspraken opslag en verwijderen horen bij elkaar)
+- SCRUM-86 relates to SCRUM-111 (privacy-afspraken in het hoofdstuk ethiek)
+
+oriëntatiereis:
+- SCRUM-90 blocks SCRUM-92 (info van de HAN als input voor de journey map)
+- SCRUM-91 blocks SCRUM-92 (deskresearch als input voor de journey map)
+- SCRUM-92 blocks SCRUM-93 (eerst de reis in beeld, dan ideeën voor vóór/na)
+
+technische quick scan + mini-prototypes:
+- SCRUM-106 blocks SCRUM-122 (quick scan bepaalt wat haalbaar is voor het mini-prototype trein)
+- SCRUM-107 blocks SCRUM-124 (idem AI-huisdier. let op: 124 staat al in review, dus misschien liever "relates to")
+- SCRUM-108 blocks SCRUM-126 (idem biometrie)
+
+
+
+
+SSSS
+- SCRUM-106 blocks SCRUM-109 (vergelijkingstabel heeft alle drie de scans nodig)
+- SCRUM-107 blocks SCRUM-109
+- SCRUM-108 blocks SCRUM-109
+- SCRUM-109 blocks SCRUM-110 (de quick scan voorleggen aan FabLab/docent)
+- SCRUM-122 blocks SCRUM-123 (eerst kerninteractie, dan uitbreiding)
+- SCRUM-124 blocks SCRUM-125
+- SCRUM-126 blocks SCRUM-127
+
+ethiek & privacy:
+- SCRUM-111 relates to SCRUM-112 (zelfde hoofdstuk)
+- SCRUM-111 relates to SCRUM-113 (toestemming in het plan en het formulier moeten kloppen met elkaar)
+
+afstemming Infra/SD + stakeholders:
+- SCRUM-57 relates to SCRUM-100 (wie 'Hack je gek' uitzoekt, komt de contactpersoon van Infra waarschijnlijk al tegen)
+- SCRUM-100 blocks SCRUM-101 (eerst contactpersoon + afspraak, dan gesprek)
+- SCRUM-101 blocks SCRUM-102 (belangen komen uit het gesprek)
+- SCRUM-102 relates to SCRUM-114 (allebei de stakeholderanalyse)
+- SCRUM-116 relates to SCRUM-114 (andere afdelingen horen in de stakeholderanalyse)
+- SCRUM-81 relates to SCRUM-115 (onderzoeksresultaten koppelen aan stakeholders)
+
+beslismatrix:
+- SCRUM-94 blocks SCRUM-95 (criteria + gewichten moeten vastliggen vóór het scoren)
+- SCRUM-81 blocks SCRUM-95 (toetsresultaten zijn input voor het scoren)
+- SCRUM-109 blocks SCRUM-95 (haalbaarheid telt mee in de matrix)
+- SCRUM-112 blocks SCRUM-95 (ethiek telt mee in de matrix)
+- SCRUM-101 relates to SCRUM-95 (overlap met Infra/SD is input voor de matrix)
+- SCRUM-95 blocks SCRUM-96 (eerst scoren, dan uitschrijven)
+
+concept + doelgroep kiezen:
+- SCRUM-95 blocks SCRUM-97 (besluit op basis van de matrix)
+- SCRUM-81 blocks SCRUM-97 (en op basis van de toetsresultaten)
+- SCRUM-82 blocks SCRUM-99 (welke doelgroep het concept aanspreekt)
+- SCRUM-97 blocks SCRUM-99 (doelgroep volgt uit de besluitbespreking)
+- SCRUM-97 blocks SCRUM-98 (eerst besluiten, dan vastleggen + update)
+- SCRUM-99 blocks SCRUM-98 (de doelgroep moet ook in het beslissingenlog)
+- SCRUM-98 relates to SCRUM-117 (allebei een update naar de opdrachtgever, kan in één bericht)
+
+co-creatiesessie:
+- SCRUM-103 blocks SCRUM-104 (eerst weten wat voor sessie het is, dan wie je uitnodigt)
+- SCRUM-103 blocks SCRUM-105 (draaiboek volgt uit doel en vorm)
+- SCRUM-69 relates to SCRUM-104 (deelnemers via het overzicht testpersonen)
+- SCRUM-97 relates to SCRUM-103 (de sessie gaat over het gekozen concept)
+
+design rationale:
+- SCRUM-50 relates to SCRUM-118 (sprint 1 blok hoort bij de weekblokken)
+- SCRUM-118 relates to SCRUM-119 (zelfde DR)
+- SCRUM-118 relates to SCRUM-120 (de tijdlijn laat de weekblokken zien)
+- SCRUM-121 relates to SCRUM-120 (beeldmateriaal in de visuele rode draad)
+
+epics (optioneel, maar handig voor de timeline view):
+- SCRUM-19 blocks SCRUM-22 (doelgroep bereiken -> concepttoets)
+- SCRUM-20 blocks SCRUM-22 (toetsplan -> concepttoets)
+- SCRUM-21 blocks SCRUM-22 (toetsmateriaal -> concepttoets)
+- SCRUM-33 blocks SCRUM-22 (toestemming -> concepttoets)
+- SCRUM-22 blocks SCRUM-23 (concepttoets -> analyse)
+- SCRUM-23 blocks SCRUM-24 (analyse -> persona's)
+- SCRUM-31 blocks SCRUM-38 (quick scan -> mini-prototypes)
+- SCRUM-23 blocks SCRUM-27 (analyse -> beslismatrix)
+- SCRUM-31 blocks SCRUM-27 (quick scan -> beslismatrix)
+- SCRUM-32 blocks SCRUM-27 (ethiek -> beslismatrix)
+- SCRUM-29 relates to SCRUM-27 (Infra/SD -> beslismatrix)
+- SCRUM-27 blocks SCRUM-28 (beslismatrix -> keuze)
+- SCRUM-29 relates to SCRUM-34 (Infra/SD -> stakeholderanalyse)
+
+ook nog: in de beschrijvingen staan nog oude nummers (S2-04, S2-08, S2-09, S2-10, S2-11, S2-13, S2-21, S2-28, S2-43, S2-44, S2-46). die kloppen niet meer met de SCRUM-nummers, dus die moeten vervangen worden (of weg, als de link er nu staat).
