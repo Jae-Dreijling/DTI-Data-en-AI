@@ -61,25 +61,25 @@
 
 ---
 
-## Dag: 14-10-2026 (wo) · Week 42 · Sprint [nr]
+## Dag: 14-10-2026 (wo) · Week 42 · Sprint 2 (DS2a)
 
 **Aanwezig / wie deed wat:**
-- [naam]: [bijdrage]
+- Jae Dreijling: kort interview met Joost Kraaijenveld (ESD) over het lenen van een robot voor het trein-concept; notulen gemaakt
 
-**Vraag waar we vandaag aan werkten:** (welke deelvraag, bv. A1)
-**Aanpak:** (methode + waarom deze)
-**Resultaat:** (wat kwam eruit; link naar foto/bestand)
-**Conclusie:** (wat betekent het voor het ontwerp/plan)
-**Nieuwe vraag:**
+**Vraag waar we vandaag aan werkten:** Is er een robot die we kunnen lenen voor demo's en om mee te werken totdat we een eigen model hebben?
+**Aanpak:** Uitvoering van beslissing #13 (7-10): bij Joost navragen welke hardware er is, wat je ermee kunt en wanneer we erbij kunnen.
+**Resultaat:** [Notulen 14-10](Overleggen/2026-10-14-Notulen-gesprek-Joost-robot.md). Joost heeft een robot op twee wielen (Roomba-achtig, Raspberry Pi, wifi) met veel sensoren, die je met een script laat rijden. Hij geeft grote JSON-logbestanden met o.a. wielencoder-data. We mogen hem lenen (en mogelijk de logbestanden), maar hij is nog niet af en moet eerst op de open dag (17–18 okt) draaien. Na de vakantie (vanaf 26-10) kunnen we ermee experimenteren. Er is een Linux-laptop of access point nodig voor de wifi-verbinding.
+**Conclusie:** De robot geeft het trein-concept een echt Data & AI-deel: logdata opschonen, encodertikken omrekenen naar centimeters, de route plotten en een voorspelling (het script) vergelijken met de meting. Tot week 44 blijft de Processing-animatie de achtervang.
+**Nieuwe vraag:** Hoeveel cm/mm is één encodertik, en welke velden in de JSON hebben we echt nodig?
 
-**Beslissingen:** (wat / alternatieven / waarom / op basis van)
-**Feedback ontvangen:** (van wie / wat / wat doen we ermee of waarom parkeren)
-**Contact met stakeholders:** (wie / kern / actiepunten)
-**Ethiek/risico's gezien:**
-**Bronnen toegevoegd:**
-**Beeld opgeslagen:** (bestandsnamen)
+**Beslissingen:** (nog geen definitieve) Robot van Joost is voorlopig de eerste keuze voor het trein-prototype. Alternatieven: BOE-Bots van de leenplek (mogelijk zonder sensoren), robotjes via Richard, zelf een Arduino-autootje. Nog toevoegen aan het beslissingenlog zodra de lening rond is.
+**Feedback ontvangen:** Van Joost: het script is eigenlijk een voorspelling; laat studenten voorspellen, meten, vergelijken en de volgende voorspelling verbeteren.
+**Contact met stakeholders:** Joost Kraaijenveld (ESD): robot lenen, beschikbaar vanaf ca. 26-10. Actiepunten: navragen wanneer we hem ophalen, voorbeeld-logbestand opvragen, Linux-laptop regelen, BOE-Bots en Richard navragen (zie notulen).
+**Ethiek/risico's gezien:** Joost gaf aan dat de opdrachtgever denkt dat de robot ook vrouwen/meiden aanspreekt. Dat ligt dicht bij een stereotype; navragen wat er precies bedoeld wordt en het niet zo in ons materiaal overnemen. Risico planning: de robot is pas na de vakantie beschikbaar en er is maar één werkend exemplaar.
+**Bronnen toegevoegd:** [Notulen 14-10](Overleggen/2026-10-14-Notulen-gesprek-Joost-robot.md)
+**Beeld opgeslagen:** (geen)
 
-**Mijn reflectie (1–3 zinnen):** wat deed ik, waarom zo, wat leer ik ervan?
+**Mijn reflectie (1–3 zinnen):** Ik ging uit van een simpel Arduino-autootje, maar deze robot past eigenlijk beter bij Data & AI omdat hij echte (rommelige) data oplevert. Wel afhankelijk van één persoon en één robot, dus de achtervang moet blijven bestaan.
 
 **Bijgewerkt vandaag:** [ ] Onderzoeksplan (+ versiebeheer) [ ] Beslissingenlog [ ] Feedbacklog [ ] Stakeholderanalyse [ ] Bronnenlijst [ ] Beeldmap
 
