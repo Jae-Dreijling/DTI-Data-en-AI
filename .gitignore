@@ -162,3 +162,6 @@ cython_debug/
 # Java (prototypes)
 *.class
 06-Prototypes/**/bin/
+
+# MY OWN
+04-Weken/09-26-10-tot-30-10/TEAMS/
