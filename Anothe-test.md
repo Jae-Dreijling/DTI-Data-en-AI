@@ -1,15 +1,7 @@
-I've filled in the Sprint 1 part of the ticket from what's in the repo. I couldn't fill in all four parts, because some things were never written down, so the main problems come first and a draft block follows.
-
 ## What's missing before this block is done
 
-1. **Sprint 1 never had a written sprint goal.** The handbook says each sprint starts with "doel vaststellen", but I couldn't find a goal anywhere. You'll have to work it out afterwards and say openly that you did. That's better than pretending it existed.
-2. **The retro hasn't happened yet** (SCRUM-49 is still on "Idea"). The "focus for sprint 2" part should include what came out of the retro. Either hold the retro first, or write the block now and add the retro points to it later.
-3. **There's no record of why 48 ideas became 3 concepts** (SCRUM-16 and SCRUM-63 are still open). Assessors at the 17-9 feedback session asked exactly this: "waarom zijn de andere 44 afgevallen?" Without it, the most important result of the sprint has no justification. The notes also don't agree: on 17-9 there were 4 ideas, on 23-9 there were 3.
-4. **There's nothing from weeks 37–38.** Week 37 has no folder, and week 38 only has the 17-9 notes. The first half of the sprint is close to invisible.
+3. **There's no record of why 48 ideas became 3 concepts** (SCRUM-16 and SCRUM-63 are still open). Assessors at the 17-9 feedback session asked exactly this: "waarom zijn de andere 44 afgevallen?" Without it, the most important result of the sprint has no justification.
 5. **Almost every logged contribution is yours.** Bart appears twice; Maryam and Karlijn appear only as "team" or co-author. Each person's contribution has to be labelled, so ask them to add theirs.
-6. **Some details to check:**
-   - The names of the stakeholders at the 1-10 meeting are still missing.
-   - [Onderzoeksplan.md](02-Onderzoeksplan/Onderzoeksplan.md) still calls the hoofdvraag a "conceptversie", so check the v1.0 .docx before you quote from it.
 
 ## The four parts
 
