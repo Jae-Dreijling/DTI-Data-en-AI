@@ -104,6 +104,9 @@ void opnieuw() {
   trajectNu = null;
   obstakelNu = null;
   passagiers = 12;
+  totaalIn = 0;
+  totaalUit = 0;
+  geschiedenis.clear();
   snelheid = NOMINAAL;
   simFrames = 0;
   ronde = 1;
@@ -142,7 +145,10 @@ void opnieuw() {
 void draw() {
   background(120, 180, 100);  // gras
 
-  if (!pauze) simFrames++;
+  if (!pauze) {
+    simFrames++;
+    meetBezetting();
+  }
 
   tekenSporen();
   for (Station s : stations) s.teken();
@@ -1013,6 +1019,7 @@ class Reiziger {
     if (fase == UIT && inTrein) {
       inTrein = false;
       passagiers--;
+      totaalUit++;
     }
     if (pad.size() > 0) {
       if (stap(pad.get(0))) {
@@ -1026,6 +1033,7 @@ class Reiziger {
       fase = WACHT;
     } else if (fase == IN) {
       passagiers++;
+      totaalIn++;
       return true;
     } else if (fase == UIT) {
       fase = WEG;
@@ -1063,42 +1071,6 @@ class Reiziger {
     fill(15, doorzicht);
     ellipse(pos.x, pos.y + wiebel, 9, 9);
   }
-}
-
-// ---------- metingen ----------
-
-class Traject {
-  int van, naar;
-  float geplandeAfstand, geplandeReistijd, geplandVertrek, geplandAankomst;
-  float vertrek, aankomst = -1, afstand = 0, stoptijd;
-  boolean obstakel = false, dicht = false, langzaam = false;
-
-  boolean klaar() {
-    return aankomst >= 0;
-  }
-  float reistijd() {
-    return ((klaar() ? aankomst : simFrames) - vertrek) / 60.0;
-  }
-  float vertraging() {
-    return ((klaar() ? aankomst : simFrames) - geplandAankomst) / 60.0;
-  }
-  // waardoor de trein te laat (of te vroeg) is
-  String oorzaak() {
-    StringList o = new StringList();
-    if (obstakel) o.append("obstakel");
-    if (dicht) o.append("spoor dicht");
-    if (afstand > geplandeAfstand * 1.05 + 20) o.append("omweg");
-    if (stoptijd > HALTE_PLAN + 60) o.append("druk perron");
-    if (langzaam) o.append("lage snelheid");
-    if (o.size() == 0 && round(vertraging()) > 0) o.append("eerdere vertraging");
-    if (o.size() == 0) return "-";
-    return o.join(", ");
-  }
-}
-
-String klok(float frames) {
-  int m = 600 + floor(frames / 60);  // de simulatie begint om 10:00, 1 seconde = 1 minuut
-  return nf((m / 60) % 24, 2) + ":" + nf(m % 60, 2);
 }
 
 // ---------- bediening ----------
@@ -1225,248 +1197,4 @@ void tekenOnderbalk() {
     text(melding, 14, 716);
   }
   popStyle();
-}
-
-// ---------- dashboard (nep-website rechts) ----------
-
-void tekenDashboard() {
-  pushStyle();
-  float x0 = W_NET;
-  float w = width - x0;
-  rectMode(CORNER);
-  textAlign(LEFT, BASELINE);
-  noStroke();
-
-  fill(238, 241, 246);
-  rect(x0, 0, w, height);
-
-  // browserbalk
-  fill(52, 56, 64);
-  rect(x0, 0, w, 36);
-  fill(255, 95, 87);
-  ellipse(x0 + 16, 18, 11, 11);
-  fill(255, 189, 46);
-  ellipse(x0 + 32, 18, 11, 11);
-  fill(40, 200, 64);
-  ellipse(x0 + 48, 18, 11, 11);
-  fill(80, 85, 95);
-  rect(x0 + 66, 8, w - 80, 20, 10);
-  fill(205);
-  textSize(11);
-  text("treinmonitor.local/dashboard", x0 + 80, 22);
-
-  // kop
-  fill(25, 30, 40);
-  textSize(20);
-  text("TreinMonitor", x0 + 16, 64);
-  fill(220, 40, 40, (!pauze && (frameCount / 30) % 2 == 0) ? 255 : 70);
-  ellipse(x0 + w - 56, 58, 8, 8);
-  fill(220, 40, 40);
-  textSize(11);
-  text(pauze ? "PAUZE" : "LIVE", x0 + w - 48, 62);
-  fill(120, 125, 135);
-  text("Klok: " + klok(simFrames) + "   ·   ronde " + ronde, x0 + 16, 82);
-
-  // kaartjes
-  float kb = (w - 32 - 10) / 2, kh = 62;
-  float k1 = x0 + 16, k2 = k1 + kb + 10;
-  String traject, sub;
-  if (toestand == HALTE) {
-    traject = "Halte " + CODE[knoopNu];
-    sub = "in- en uitstappen";
-  } else if (toestand == GEEN_ROUTE) {
-    traject = "Staat stil";
-    sub = "geen open route";
-  } else if (toestand == OBSTAKEL) {
-    traject = trajectNu != null ? CODE[trajectNu.van] + " → " + CODE[stops.get(0)] : "-";
-    sub = "obstakel wordt opgeruimd";
-  } else {
-    traject = trajectNu != null ? CODE[trajectNu.van] + " → " + CODE[stops.get(0)] : "-";
-    sub = "onderweg";
-  }
-  kaart(k1, 92, kb, kh, "Huidig traject", traject, sub, color(25, 30, 40));
-
-  float v = 0;
-  if (trajectNu != null) v = max(trajectNu.vertraging(), 0);
-  else if (deze.size() > 0) v = deze.get(deze.size() - 1).vertraging();
-  else if (vorige.size() > 0) v = vorige.get(vorige.size() - 1).vertraging();
-  int vm = round(v);
-  kaart(k2, 92, kb, kh, "Vertraging", vm > 0 ? "+" + vm + " min" : (vm < 0 ? vm + " min" : "op tijd"),
-    "t.o.v. de dienstregeling", vm > 0 ? color(200, 50, 50) : color(40, 150, 80));
-
-  kaart(k1, 162, kb, kh, "Passagiers aan boord", str(passagiers), null, color(25, 30, 40));
-  float bezet = passagiers / float(CAPACITEIT);
-  fill(225, 228, 235);
-  rect(k1 + 12, 162 + 48, kb - 24, 6, 3);
-  fill(bezet > 0.8 ? color(230, 120, 40) : color(40, 160, 90));
-  rect(k1 + 12, 162 + 48, (kb - 24) * bezet, 6, 3);
-  fill(120, 125, 135);
-  textSize(10);
-  textAlign(RIGHT, BASELINE);
-  text("/ " + CAPACITEIT + "  ·  " + aantalWachtend() + " wachtend", k1 + kb - 12, 162 + 40);
-  textAlign(LEFT, BASELINE);
-
-  boolean stil = toestand != RIJDT || pauze;
-  int kmu = stil ? 0 : round(snelheid * factor * 20);
-  kaart(k2, 162, kb, kh, "Snelheid", kmu + " km/u", "ingesteld: " + round(snelheid * 20) + " km/u", color(25, 30, 40));
-
-  beroep(k1, 244, "Data engineer: zorgt dat de meetgegevens van de trein goed binnenkomen.");
-
-  tekenTabel(k1, 254, w - 32, 168);
-  beroep(k1, 436, "Data-analist: zoekt in deze tabel uit waarom een trein te laat is.");
-
-  tekenGrafiek(k1, 446, w - 32, 240);
-  beroep(k1, 704, "Data scientist: voorspelt met oude ritten waar de volgende vertraging komt.");
-  popStyle();
-}
-
-void beroep(float x, float y, String s) {
-  fill(90, 70, 160);
-  textSize(10);
-  text(s, x, y);
-}
-
-void kaart(float x, float y, float w, float h, String label, String waarde, String extra, int kleur) {
-  noStroke();
-  fill(0, 18);
-  rect(x + 1, y + 2, w, h, 8);
-  fill(255);
-  rect(x, y, w, h, 8);
-  fill(120, 125, 135);
-  textSize(10);
-  text(label.toUpperCase(), x + 12, y + 17);
-  fill(kleur);
-  textSize(20);
-  text(waarde, x + 12, y + 40);
-  if (extra != null) {
-    fill(120, 125, 135);
-    textSize(10);
-    text(extra, x + 12, y + h - 8);
-  }
-}
-
-// dienstregeling: geplande en gemeten aankomst per traject
-void tekenTabel(float x, float y, float w, float h) {
-  noStroke();
-  fill(0, 18);
-  rect(x + 1, y + 2, w, h, 8);
-  fill(255);
-  rect(x, y, w, h, 8);
-
-  ArrayList<Traject> lijst = deze;
-  String titel = "DIENSTREGELING: GEPLAND VS. GEMETEN · RONDE " + ronde;
-  if (deze.size() == 0 && vorige.size() > 0) {
-    lijst = vorige;
-    titel = "DIENSTREGELING: GEPLAND VS. GEMETEN · VORIGE RONDE";
-  }
-  fill(120, 125, 135);
-  textSize(10);
-  text(titel, x + 12, y + 18);
-
-  float[] kol = {x + 12, x + 72, x + 134, x + 196, x + 250};
-  String[] kop = {"Traject", "Gepland", "Gemeten", "Verschil", "Oorzaak"};
-  fill(150);
-  textSize(10);
-  for (int i = 0; i < kop.length; i++) text(kop[i], kol[i], y + 38);
-  stroke(232);
-  strokeWeight(1);
-  line(x + 10, y + 44, x + w - 10, y + 44);
-  noStroke();
-
-  if (lijst.size() == 0) {
-    fill(150);
-    textSize(12);
-    text("Nog geen ritten gemeten: de trein vertrekt zo.", kol[0], y + 70);
-    return;
-  }
-  int start = max(0, lijst.size() - 4);
-  for (int i = start; i < lijst.size(); i++) {
-    Traject t = lijst.get(i);
-    float ry = y + 64 + (i - start) * 26;
-    fill(25, 30, 40);
-    textSize(13);
-    text(CODE[t.van] + " → " + CODE[t.klaar() ? t.naar : stops.get(0)], kol[0], ry);
-    text(klok(t.geplandAankomst), kol[1], ry);
-    if (t.klaar()) {
-      text(klok(t.aankomst), kol[2], ry);
-      int vm = round(t.vertraging());
-      fill(vm > 0 ? color(200, 50, 50) : (vm < 0 ? color(40, 100, 200) : color(40, 150, 80)));
-      text(vm > 0 ? "+" + vm : str(vm), kol[3], ry);
-      fill(80);
-      textSize(11);
-      text(t.oorzaak(), kol[4], ry);
-    } else {
-      fill(150);
-      text("onderweg…", kol[2], ry);
-    }
-  }
-}
-
-// reistijd per traject: gepland (grijs) naast gemeten (blauw, rood als het langer duurde)
-void tekenGrafiek(float x, float y, float w, float h) {
-  noStroke();
-  fill(0, 18);
-  rect(x + 1, y + 2, w, h, 8);
-  fill(255);
-  rect(x, y, w, h, 8);
-  fill(120, 125, 135);
-  textSize(10);
-  text("REISTIJD PER TRAJECT (MINUTEN)", x + 12, y + 18);
-
-  ArrayList<Traject> lijst = new ArrayList<Traject>();
-  ArrayList<Traject> bron = vorige.size() > 0 ? vorige : deze;
-  for (Traject t : bron) if (t.klaar()) lijst.add(t);
-
-  // legenda
-  fill(200);
-  rect(x + w - 150, y + 10, 10, 10);
-  fill(120, 125, 135);
-  text("gepland", x + w - 136, y + 19);
-  fill(50, 110, 220);
-  rect(x + w - 82, y + 10, 10, 10);
-  fill(120, 125, 135);
-  text("gemeten", x + w - 68, y + 19);
-
-  if (lijst.size() == 0) {
-    fill(150);
-    textSize(12);
-    text("Na de eerste ritten verschijnen hier de reistijden.", x + 12, y + 50);
-    return;
-  }
-
-  float gx = x + 34, gy = y + 34, gb = w - 46, gh = h - 64;
-  float max = 1;
-  for (Traject t : lijst) max = max(max, max(t.reistijd(), t.geplandeReistijd / 60.0));
-  max = ceil(max * 1.15);
-
-  textAlign(RIGHT, CENTER);
-  textSize(9);
-  for (int i = 0; i <= 2; i++) {
-    float ly = gy + gh - gh * i / 2;
-    stroke(232);
-    strokeWeight(1);
-    line(gx, ly, gx + gb, ly);
-    noStroke();
-    fill(150);
-    text(nf(max * i / 2, 0, 1), gx - 6, ly);
-  }
-
-  float vak = gb / lijst.size();
-  float bw = min(28, vak / 3);
-  for (int i = 0; i < lijst.size(); i++) {
-    Traject t = lijst.get(i);
-    float cx = gx + vak * i + vak / 2;
-    float hp = gh * (t.geplandeReistijd / 60.0) / max;
-    float hm = gh * t.reistijd() / max;
-    noStroke();
-    fill(200);
-    rect(cx - bw - 2, gy + gh - hp, bw, hp, 3, 3, 0, 0);
-    fill(t.reistijd() > t.geplandeReistijd / 60.0 + 0.5 ? color(220, 70, 60) : color(50, 110, 220));
-    rect(cx + 2, gy + gh - hm, bw, hm, 3, 3, 0, 0);
-    fill(60);
-    textAlign(CENTER, TOP);
-    textSize(11);
-    text(CODE[t.van] + "→" + CODE[t.naar], cx, gy + gh + 6);
-  }
-  textAlign(LEFT, BASELINE);
 }
