@@ -1,0 +1,334 @@
+﻿Issue Id,Issue Type,Summary,Description,Sprint,Story Points,Priority,Labels,Labels,Labels,Labels,Labels,Labels,Labels,Labels,Labels,Due Date,Status,Inward issue link (Blocks),Inward issue link (Blocks),Inward issue link (Blocks),Inward issue link (Blocks),Inward issue link (Blocks),Inward issue link (Blocks)
+301,Task,"Sprintstart DS3: retro DS2b, planning en Jira opruimen","*Waarom:* DS2b is klaar na stakeholderbijeenkomst 2. Voor we verder bouwen, kijken we terug, ruimen we Jira op en spreken we af wat DS3 oplevert.
+*Wat:* Retro, open werk nalopen, oude SCRUM-tickets sluiten die vervangen zijn (zie tabblad 'Nog open in Jira'), werkafspraken.
+*Klaar als:* De retro staat in SCRUM > Retrospectives, Jira bevat alleen nog echt open werk en elke DS3-hoofdtaak heeft subtaken met een eigenaar.
+
+*Voorstel subtaken:*
+- Retro DS2b houden en opschrijven (S2B-11.12); retro DS1 (SCRUM-49) meenemen
+- *Open subtaken van S2B-01 t/m S2B-11 nalopen:* afmaken, meenemen of schrappen
+- Oude SCRUM-epics sluiten of koppelen (lijst op tabblad 'Nog open in Jira')
+- DoR/DoD en werkafspraken vastleggen (SCRUM-64)
+- Doel van DS3 in één zin + subtaken aanmaken per hoofdtaak
+
+*Geblokkeerd door:* S2B-06 (al in Jira, handmatig linken)",3,3,Highest,proces,pr2,,,,,,,,18/Nov/26 12:00 AM,To Do,,,,,,
+302,Task,Stakeholderbijeenkomst 2 (12-11) verwerken,"*Waarom:* Op 12-11 hebben we de conceptkeuze, de open dag en onze vragen voorgelegd. Wat daar gezegd en besloten is, stuurt DS3.
+*Wat:* Notulen afmaken, feedback en besluiten in de logs, gevolgen omzetten naar subtaken.
+*Klaar als:* Geen feedbackpunt van 12-11 zonder reactie, en elk besluit heeft 'Akkoord team'.
+
+*Voorstel subtaken:*
+- Notulen afmaken en in Teams zetten (S2B-06.4)
+- *Elk feedbackpunt in het feedbacklog:* overgenomen / aangepast / geparkeerd + reden
+- Besluiten in het beslissingenlog
+- Gevolgen als subtaken bij de juiste hoofdtaak zetten
+
+*Geblokkeerd door:* S2B-06 (al in Jira, handmatig linken)
+*Blokkeert:* S3-05 (Trein v2: meer saboteren(?), en de data laat het zien); S3-06 (AI-huisdier v3: beslisboom zichtbaar laten groeien)",3,3,Highest,stakeholder,documentatie,pr3,pr4,,,,,,20/Nov/26 12:00 AM,To Do,,,,,,
+303,Task,Open dagen analyseren (Nijmegen 7-11 + Arnhem 14-11),"*Waarom:* De open dag was onze echte test met de huidige versies (deelvraag 5). We weten al dat bezoekers het langst bij de trein bleven, maar de vragenlijsten zijn nog niet verwerkt.
+*Wat:* Aantallen, voor- en nameting, observaties, conclusie per prototype en per doelgroep.
+*Klaar als:* Een resultatendocument staat in Teams en deelvraag 5 is bijgewerkt in het onderzoeksplan.
+
+*Voorstel subtaken:*
+- Aantal bezoekers + ingevulde vragenlijsten noteren
+- Voor- en nameting vergelijken
+- Observaties clusteren (labelen + thema's, zelfde aanpak als 15-10)
+- Conclusie per prototype en per doelgroep
+- Arnhem 14-11 op dezelfde manier (als we daar getest hebben)
+*Blokkeert:* S3-04 (Doelgroep scherp: persona's per doelgroep + contactmoment); S3-05 (Trein v2: meer saboteren(?), en de data laat het zien); S3-06 (AI-huisdier v3: beslisboom zichtbaar laten groeien); S3-13 (Co-creatiesessie: doen of bewust schrappen); S3-14 (Feedbacksessie week 48 voorbereiden + verwerken); S3-16 (Onderzoeksplan: voorlopig antwoord per deelvraag)",3,5,Highest,onderzoek,test,open-dag,deelvraag-5,op3,,,,,25/Nov/26 12:00 AM,To Do,,,,,,
+304,Task,Doelgroep scherp: persona's per doelgroep + contactmoment,"*Waarom:* Uit feedback #26: de doelgroep is nog niet scherp. Met de data van 15-10 en de open dag kunnen we nu per doelgroep een persona maken en kiezen voor wie we vooral ontwerpen.
+*Wat:* Persona of empathy map per doelgroep, gekoppeld aan het contactmoment.
+*Klaar als:* Per doelgroep een persona op basis van onze data, en een primaire doelgroep gekozen (in het beslissingenlog).
+
+*Voorstel subtaken:*
+- Persona/empathy map per doelgroep op basis van toetsdata (SCRUM-83)
+- *Koppelen aan contactmoment:* inspireren / informeren / activeren / committeren (SCRUM-84)
+- Primaire doelgroep kiezen + in het beslissingenlog
+
+*Geblokkeerd door:* S3-03 (Open dagen analyseren (Nijmegen 7-11 + Arnhem 14-11))
+*Blokkeert:* S3-08 (Oriëntatiereis + 'voor en na' het contactmoment); S3-16 (Onderzoeksplan: voorlopig antwoord per deelvraag)",3,3,High,onderzoek,mbo,havo-vwo,propedeuse,op3,,,,,02/Dec/26 12:00 AM,To Do,303,,,,,
+305,Task,"Trein v2: meer saboteren(?), en de data laat het zien","*Waarom:* Bezoekers vonden het saboteren van de trein het leukst (open dag 7-11) en Jorg vond het leuker dan verwacht. Dat saboteren is ons zelfmaak-element, dus daar bouwen we op voort.
+*Wat:* Meer storingen die de bezoeker zelf veroorzaakt; het dashboard laat zien hoe de data dat opvangt en wat een dataspecialist ermee doet.
+*Klaar als:* Een bezoeker kan in ~15 minuten een storing veroorzaken, voorspellen wat er gebeurt en het in de data terugzien. Getest door iemand die hem niet bouwde.
+
+*Voorstel subtaken:*
+- *Storingen:* kapotte wissel, storing, iets op het spoor
+- *Dashboard:* storing zichtbaar in de data + uitleg wat een dataspecialist doet
+- Route-optimalisatie (TSP) afmaken als dat in DS2b niet af is
+- Keuze fysiek/digitaal (S2B-02) doorvoeren
+- Testen door iemand die hem niet bouwde
+
+*Geblokkeerd door:* S3-02 (Stakeholderbijeenkomst 2 (12-11) verwerken); S3-03 (Open dagen analyseren (Nijmegen 7-11 + Arnhem 14-11)); S2B-02 (al in Jira, handmatig linken)
+*Blokkeert:* S3-07 (Zelfstandig inzetbaar: docent kan het zonder ons opzetten); S3-15 (Feedbacksessie week 50 voorbereiden + verwerken)",3,8,High,concept-trein,prototype,del-prototype,pr1,,,,,,09/Dec/26 12:00 AM,To Do,302,303,,,,
+306,Task,AI-huisdier v3: beslisboom zichtbaar laten groeien,"*Waarom:* Het AI-huisdier is duidelijk, maar trok op de open dag minder aandacht dan de trein. Tip van Jorg: maak het visueler. Dat past bij het advies van Harmen (7-10): laagdrempelig en visueel.
+*Wat:* De beslisboom als animatie laten groeien en de AI laten 'denken'; thema's voor een bredere doelgroep (#21).
+*Klaar als:* De bezoeker ziet bij elke vraag de boom veranderen. Getest door iemand die hem niet bouwde.
+
+*Voorstel subtaken:*
+- *Ontwerp:* hoe ziet de groeiende boom eruit (schets)
+- Animatie van de boom bouwen
+- 'AI denkt'-moment (wolkjes) toevoegen
+- 1–2 extra thema's voor een bredere doelgroep
+- Testen door iemand die hem niet bouwde
+
+*Geblokkeerd door:* S3-02 (Stakeholderbijeenkomst 2 (12-11) verwerken); S3-03 (Open dagen analyseren (Nijmegen 7-11 + Arnhem 14-11))
+*Blokkeert:* S3-07 (Zelfstandig inzetbaar: docent kan het zonder ons opzetten); S3-15 (Feedbacksessie week 50 voorbereiden + verwerken)",3,8,High,concept-aihuisdier,prototype,del-prototype,pr1,,,,,,09/Dec/26 12:00 AM,To Do,302,303,,,,
+307,Task,Zelfstandig inzetbaar: docent kan het zonder ons opzetten,"*Waarom:* 'Zelfstandig en makkelijk op te zetten door docenten' is een harde eis van de opdrachtgever (#23). Een externe beoordelaar moet het prototype ook zelfstandig kunnen ervaren (deliverables).
+*Wat:* Beide prototypes starten zonder installatiegedoe en zonder internet, met handleiding en materiaallijst.
+*Klaar als:* Iemand buiten het team zet beide prototypes op met alleen de handleiding.
+
+*Voorstel subtaken:*
+- *Trein:* exporteren als losse app
+- *AI-huisdier:* volledig offline
+- Begeleidershandleiding + deelnemersinstructie bijwerken
+- *Materiaallijst + kosten (SCRUM-31:* kosten)
+- *Test:* iemand buiten het team zet het op
+
+*Geblokkeerd door:* S3-05 (Trein v2: meer saboteren(?), en de data laat het zien); S3-06 (AI-huisdier v3: beslisboom zichtbaar laten groeien)
+*Blokkeert:* S3-20 (Prototypes eindversie: zip + instructiedocument + overdracht)",3,5,High,prototype,documentatie,pr1,,,,,,,16/Dec/26 12:00 AM,To Do,305,306,,,,
+308,Task,Oriëntatiereis + 'voor en na' het contactmoment,"*Waarom:* Uit feedback #7, #15 en #28: hoe bereik je aankomende studenten, en wat krijgen ze vóór en ná de open dag mee?
+*Wat:* Info bij de HAN opvragen, journey map, voorstel 'voor en na'.
+*Klaar als:* Journey map en voorstel staan in Teams en zijn besproken met de opdrachtgever.
+
+*Voorstel subtaken:*
+- Info over oriëntatie van studiekiezers opvragen bij de HAN (SCRUM-90)
+- Waar en wanneer oriënteren scholieren zich (SCRUM-91)
+- *Journey map:* oriëntatie > contactmoment > daarna (SCRUM-92)
+- Ideeën voor vóór en ná, per prototype (SCRUM-93), bijv. QR-code 'neem je AI mee'
+
+*Geblokkeerd door:* S3-04 (Doelgroep scherp: persona's per doelgroep + contactmoment)",3,5,Medium,onderzoek,ontwerp,open-dag,,,,,,,16/Dec/26 12:00 AM,To Do,304,,,,,
+309,Task,Bestaande toepassingen + stakeholderanalyse afronden,"*Waarom:* Het onderzoeksplan mist nog een vergelijking met wat er al is, en een stakeholderanalyse hebben we nog niet (#3, #4, #5, #20, #35, #36).
+*Wat:* Bestaande toepassingen onderzoeken en vergelijken met onze prototypes; stakeholderanalyse maken; afstemmen met Infra/SD.
+*Klaar als:* Het hoofdstuk bestaande toepassingen vergelijkt onze prototypes met wat er is, en de stakeholderanalyse staat in Teams.
+
+*Voorstel subtaken:*
+- 'Hack je gek' (Infra) navragen (SCRUM-57) + gesprek Infra/SD (SCRUM-100, 101)
+- Huidige workshop Teachable Machine vergelijken (SCRUM-58, S2B-07.5)
+- Andere hogescholen + data-games (SCRUM-59, 61)
+- *Lectoraat:* swarm-demo, CoderDojo (#35)
+- *Stakeholderanalyse maken:* belang, invloed, conflicten, marketingteam (S2B-06.6, SCRUM-114 t/m 116, 102)
+*Blokkeert:* S3-16 (Onderzoeksplan: voorlopig antwoord per deelvraag)",3,5,Medium,onderzoek,stakeholder,op1,pr3,,,,,,16/Dec/26 12:00 AM,To Do,,,,,,
+310,Task,Aangeleverde dataset: kernbevindingen + netjes verwijderen,"*Waarom:* We hebben een dataset gekregen. De bevindingen staan nog niet in het onderzoeksplan, en we hebben afgesproken de data daarna te verwijderen.
+*Wat:* Kernbevindingen + grafiek in het onderzoeksplan; data verwijderen en bevestigen aan de aanleverder.
+*Klaar als:* Bevindingen staan in het onderzoeksplan en de aanleverder heeft de bevestiging van verwijderen.
+
+*Voorstel subtaken:*
+- Kernbevindingen + grafiek(en) in het onderzoeksplan (SCRUM-88)
+- Data verwijderen + bevestiging sturen (SCRUM-89)
+*Blokkeert:* S3-16 (Onderzoeksplan: voorlopig antwoord per deelvraag)",3,2,Medium,onderzoek,ethiek,deelvraag-2,,,,,,,02/Dec/26 12:00 AM,To Do,,,,,,
+311,Task,Ethiek & privacy afronden,"*Waarom:* We testen met minderjarigen en verzamelen testdata en beeld (#1, #16, #34).
+*Wat:* Ethiek-hoofdstuk in het onderzoeksplan af; vaste afspraak over toestemming.
+*Klaar als:* Het ethiek-hoofdstuk is af en het toestemmingsformulier is gecheckt door een docent.
+
+*Voorstel subtaken:*
+- Hoofdstuk ethiek & privacy aanvullen (SCRUM-111)
+- Ethische afweging per prototype, incl. 'AI pakt banen' / Photoshop-vergelijking (SCRUM-112)
+- Toestemmingsformulier afmaken + check docent (SCRUM-113)
+*Blokkeert:* S3-16 (Onderzoeksplan: voorlopig antwoord per deelvraag)",3,3,Medium,ethiek,et2-oordeel,documentatie,,,,,,,16/Dec/26 12:00 AM,To Do,,,,,,
+329,Task,"Nieuwe technologie leren: workshops volgen (bijv. Blender, Unity)","*Waarom:* De kern van deze minor is het verkennen van relatief nieuwe IT&Media-technologie: wat kan het, en wat kan het niet (rubric: prototype en productbiografie, eindterm 1 en 2). We verwachten workshops zoals Blender en Unity, maar wat er precies komt, weten we nog niet.
+*Wat:* Uitzoeken welke workshops er in DS3 komen, ze volgen, en per workshop vastleggen wat we geleerd hebben en of het bruikbaar is voor onze prototypes.
+*Klaar als:* Elke gevolgde workshop heeft een korte notitie (wat geleerd, mogelijkheden, beperkingen, bruikbaar voor ons?) en staat in de DR.
+
+*Voorstel subtaken:*
+- *Navragen/rooster checken:* welke workshops komen er (Blender? Unity? iets anders?)
+- *Unity-workshop:* datum checken (beslissingenlog #14 wacht op antwoord)
+- Workshop volgen (per workshop een subtaak)
+- *Per workshop een notitie:* wat geleerd, mogelijkheden, beperkingen, bruikbaar voor trein of AI-huisdier?
+- Inzichten in de DR (weekblok)
+*Blokkeert:* S3-30 (Nieuwe technologie toepassen: iedereen laat het zien)",3,3,High,onderzoek,et1-kennis,pr1,,,,,,,11/Dec/26 12:00 AM,To Do,,,,,,
+330,Task,Nieuwe technologie toepassen: iedereen laat het zien,"*Waarom:* Iedereen in het team moet laten zien dat hij of zij een nieuwe technologie heeft geleerd en toegepast. Dat is een kern van de minor en het moet zichtbaar zijn in de DR, met naam erbij.
+*Wat:* Ieder kiest een nieuwe technologie (bijv. uit de workshops) en gebruikt die in een prototype of deliverable, bijvoorbeeld een Blender-model van een station of de trein, een Unity-versie, of een 3D-print. Binnen de scope blijven (geen volledige Unity-wereld).
+*Klaar als:* Elk teamlid heeft een eigen zichtbaar resultaat met een nieuwe technologie, en dat staat met naam in de DR (wat, waarom, mogelijkheden en beperkingen).
+
+*Voorstel subtaken:*
+- *Ieder:* technologie kiezen + waarom (in het beslissingenlog)
+- *Ieder:* toepassen in een prototype of deliverable
+- *Ieder:* DR-slide met resultaat, mogelijkheden en beperkingen (met naam)
+- *Subtaak per persoon:* Jae, Bart, Karlijn, Maryam
+
+*Geblokkeerd door:* S3-29 (Nieuwe technologie leren: workshops volgen (bijv. Blender, Unity))
+*Blokkeert:* S3-27 (Design Rationale eindversie + persoonlijke reflecties)",3,8,Highest,individueel,et1-kennis,pr1,del-designrationale,,,,,,18/Dec/26 12:00 AM,To Do,329,,,,,
+313,Task,Co-creatiesessie: doen of bewust schrappen,"*Waarom:* Uit feedback #14 staat een co-creatiesessie met de doelgroep nog open. Doen we dat nog, of schrappen we het met een reden?
+*Wat:* Eerst beslissen. Bij 'doen': deelnemers, datum, draaiboek, uitvoeren, uitwerken.
+*Klaar als:* Óf de sessie is gedaan en uitgewerkt, óf het schrappen staat met reden in het beslissingenlog.
+
+*Voorstel subtaken:*
+- Besluit doen/schrappen + in het beslissingenlog
+- (bij doen) Deelnemers + datum (SCRUM-104)
+- (bij doen) Draaiboek + materialen (SCRUM-105)
+- (bij doen) Uitvoeren + uitwerken
+
+*Geblokkeerd door:* S3-03 (Open dagen analyseren (Nijmegen 7-11 + Arnhem 14-11))",3,2,Low,onderzoek,stretch,,,,,,,,02/Dec/26 12:00 AM,To Do,303,,,,,
+314,Task,Feedbacksessie week 48 voorbereiden + verwerken,"*Waarom:* Feedbacksessies zijn ons moment om te checken of we de goede kant op gaan.
+*Wat:* Presentatie (5–12 min) volgens de vaste indeling; vragen; notulen; feedback in het log.
+*Klaar als:* De notulen staan in Teams en elk feedbackpunt heeft binnen een week een reactie.
+
+*Voorstel subtaken:*
+- *Presentatie:* opdracht > probleem > doelgroep > onderzoeksvraag > deelvraag-aanpak-resultaat-conclusie > hoe verder
+- 2–3 vragen voor docenten en medestudenten
+- Notulen
+- Feedback in het feedbacklog met reactie
+
+*Geblokkeerd door:* S3-03 (Open dagen analyseren (Nijmegen 7-11 + Arnhem 14-11))",3,3,High,proces,pr3,et3-communicatie,,,,,,,26/Nov/26 12:00 AM,To Do,303,,,,,
+315,Task,Feedbacksessie week 50 voorbereiden + verwerken,"*Waarom:* Tweede check in DS3, nu met de nieuwe versies van de prototypes.
+*Wat:* Presentatie met trein v2 en AI-huisdier v3; vragen; notulen; feedback in het log.
+*Klaar als:* De notulen staan in Teams en elk feedbackpunt heeft binnen een week een reactie.
+
+*Voorstel subtaken:*
+- Presentatie + demo trein v2 en AI-huisdier v3
+- Vragen voor docenten en medestudenten
+- Notulen
+- Feedback in het feedbacklog met reactie
+
+*Geblokkeerd door:* S3-05 (Trein v2: meer saboteren(?), en de data laat het zien); S3-06 (AI-huisdier v3: beslisboom zichtbaar laten groeien)
+*Blokkeert:* S3-20 (Prototypes eindversie: zip + instructiedocument + overdracht)",3,3,High,proces,pr3,et3-communicatie,,,,,,,10/Dec/26 12:00 AM,To Do,305,306,,,,
+316,Task,Onderzoeksplan: voorlopig antwoord per deelvraag,"*Waarom:* In de eindfase beantwoorden we de hoofdvraag. Daarvoor moet elke deelvraag eind DS3 een voorlopig antwoord hebben.
+*Wat:* Per deelvraag: wat weten we, waar komt het vandaan, wat is nog open.
+*Klaar als:* Elke deelvraag heeft een voorlopige conclusie met bron, en het versiebeheer klopt.
+
+*Voorstel subtaken:*
+- *Deelvraag 1 t/m 5:* conclusie + bron (test, gesprek, literatuur)
+- Open punten uit SCRUM-12 afronden (bronvermelding, literatuurlijst, rubric-check)
+- Versiebeheer bijwerken
+
+*Geblokkeerd door:* S3-03 (Open dagen analyseren (Nijmegen 7-11 + Arnhem 14-11)); S3-04 (Doelgroep scherp: persona's per doelgroep + contactmoment); S3-09 (Bestaande toepassingen + stakeholderanalyse afronden); S3-10 (Aangeleverde dataset: kernbevindingen + netjes verwijderen); S3-11 (Ethiek & privacy afronden); S2B-07 (al in Jira, handmatig linken)
+*Blokkeert:* S3-21 (Hoofdvraag beantwoorden + advies aan de opdrachtgever)",3,5,High,documentatie,onderzoek,op1,op3,deelvraag-1,deelvraag-2,deelvraag-3,deelvraag-4,deelvraag-5,18/Dec/26 12:00 AM,To Do,303,304,309,310,311,
+317,Task,"Design Rationale + logs bijhouden (DS3, incl. sprintreview)","*Waarom:* De DR is ons procesbewijs (met individuele bijdragen gelabeld). Als we elke week bijwerken, hoeven we aan het eind niets te reconstrueren.
+*Wat:* Weekblokken 47–51, sprintreview DS3, feedback- en beslissingenlog elke week bij, foto's per week.
+*Klaar als:* DR en logs zijn bij tot en met week 51, met foto's en 'wie deed wat'.
+
+*Voorstel subtaken:*
+- *Weekblokken 47–51:* vraag, aanpak, resultaat, conclusie, nieuwe vraag + wie deed wat
+- Minstens 1 foto/screenshot per week (SCRUM-37, 121)
+- Sprintreview DS3 (slide)
+- Feedback- en beslissingenlog wekelijks bijwerken
+
+*Geblokkeerd door:* S2B-10 (al in Jira, handmatig linken); S2B-09 (al in Jira, handmatig linken)
+*Blokkeert:* S3-18 (Sprintstart eindfase: retro DS3 + inleverdata navragen); S3-27 (Design Rationale eindversie + persoonlijke reflecties)",3,5,High,del-designrationale,documentatie,pr1,pr2,pr4,,,,,18/Dec/26 12:00 AM,To Do,,,,,,
+318,Task,Sprintstart eindfase: retro DS3 + inleverdata navragen,"*Waarom:* De eindfase is kort. We moeten meteen weten wat er nog moet, wanneer het binnen moet en wie wat doet.
+*Wat:* Retro DS3, open werk nalopen, inleverdata navragen, subtaken aanmaken.
+*Klaar als:* De retro staat in Teams, de inleverdata zijn bekend (en de due dates hier aangepast) en elke hoofdtaak heeft subtaken.
+
+*Voorstel subtaken:*
+- Retro DS3
+- *Open DS3-werk:* afmaken, meenemen of schrappen
+- Exacte inleverdatum eind-pakket navragen bij de docent
+- Subtaken aanmaken per hoofdtaak
+
+*Geblokkeerd door:* S3-17 (Design Rationale + logs bijhouden (DS3, incl. sprintreview))
+*Blokkeert:* S3-19 (Feedbacksessie week 1 voorbereiden + verwerken)",4,2,Highest,proces,pr2,,,,,,,,05/Jan/27 12:00 AM,To Do,317,,,,,
+319,Task,Feedbacksessie week 1 voorbereiden + verwerken,"*Waarom:* Laatste feedbacksessie vóór de eindpresentatie: de kans om de eindproducten te laten checken.
+*Wat:* Presentatie met (bijna) eindversies van prototypes, poster en video; vragen; notulen.
+*Klaar als:* De notulen staan in Teams en elk feedbackpunt heeft een reactie.
+
+*Voorstel subtaken:*
+- Presentatie met eindversies (of schetsen) van de deliverables
+- Vragen over de eindproducten
+- Notulen + feedback in het log
+
+*Geblokkeerd door:* S3-18 (Sprintstart eindfase: retro DS3 + inleverdata navragen)
+*Blokkeert:* S3-20 (Prototypes eindversie: zip + instructiedocument + overdracht)",4,3,High,proces,pr3,et3-communicatie,,,,,,,07/Jan/27 12:00 AM,To Do,318,,,,,
+320,Task,Prototypes eindversie: zip + instructiedocument + overdracht,"*Waarom:* Deliverable 'interactief prototype': een .zip met alle bestanden + instructiedocument, zodat een externe beoordelaar het zelf kan ervaren. De opdrachtgever moet het na de minor zelf gebruiken.
+*Wat:* Laatste feedback verwerken, bugs oplossen, inpakken, overdragen.
+*Klaar als:* De zip en het instructiedocument zijn klaar, een buitenstaander heeft het ermee gestart, en de opdrachtgever heeft alles.
+
+*Voorstel subtaken:*
+- Feedback wk 50 en wk 1 verwerken + bugs
+- Zip per prototype met alle projectbestanden
+- *Instructiedocument:* starten/installeren, apparaat/platform, hoe de interactie verloopt
+- Test door een buitenstaander met alleen de zip
+- Overdracht aan Jorg (+ waar het in Teams staat)
+
+*Geblokkeerd door:* S3-07 (Zelfstandig inzetbaar: docent kan het zonder ons opzetten); S3-15 (Feedbacksessie week 50 voorbereiden + verwerken); S3-19 (Feedbacksessie week 1 voorbereiden + verwerken)
+*Blokkeert:* S3-23 (Visuele representatie: 3 afbeeldingen); S3-24 (Video walkthrough (1–3 minuten)); S3-26 (Eind-stakeholderbijeenkomst (week 3)); S3-28 (Eind-pakket inleveren + afsluiten)",4,8,Highest,prototype,del-prototype,pr1,,,,,,,13/Jan/27 12:00 AM,To Do,307,315,319,,,
+321,Task,Hoofdvraag beantwoorden + advies aan de opdrachtgever,"*Waarom:* Dit is het antwoord op onze hoofdvraag en wat de opdrachtgever ermee kan. Poster, projectbeschrijving en eindpresentatie bouwen hierop.
+*Wat:* Conclusies van de deelvragen samenvoegen tot een antwoord op de hoofdvraag, met advies, beperkingen en vervolgstappen.
+*Klaar als:* Conclusie + advies staan in het onderzoeksplan (of los document) en zijn door iedereen gelezen.
+
+*Voorstel subtaken:*
+- Deelvraag-conclusies samenvoegen
+- Antwoord op de hoofdvraag
+- Advies + beperkingen + vervolgstappen
+- Teamreview
+
+*Geblokkeerd door:* S3-16 (Onderzoeksplan: voorlopig antwoord per deelvraag)
+*Blokkeert:* S3-22 (Projectbeschrijving (300–500 woorden)); S3-25 (Onderzoeksposter (A0/A1)); S3-26 (Eind-stakeholderbijeenkomst (week 3))",4,8,Highest,onderzoek,documentatie,op3,et2-oordeel,,,,,,13/Jan/27 12:00 AM,To Do,316,,,,,
+322,Task,Projectbeschrijving (300–500 woorden),"*Waarom:* Deliverable: compacte projectbeschrijving met vier vaste kopjes.
+*Wat:* Situatie, Probleem, Onderzoeksvraag, Jouw oplossing; als PDF of DOCX.
+*Klaar als:* 300–500 woorden, vier kopjes, nagelezen, als PDF/DOCX in de inlevermap.
+
+*Voorstel subtaken:*
+- Eerste versie per kopje
+- Nalezen door een teamgenoot
+- De 3 afbeeldingen erin verwerken
+
+*Geblokkeerd door:* S3-21 (Hoofdvraag beantwoorden + advies aan de opdrachtgever)
+*Blokkeert:* S3-28 (Eind-pakket inleveren + afsluiten)",4,2,High,del-projectbeschrijving,et3-communicatie,,,,,,,,15/Jan/27 12:00 AM,To Do,321,,,,,
+323,Task,Visuele representatie: 3 afbeeldingen,"*Waarom:* Deliverable: drie beelden die de oplossing zo goed mogelijk laten zien, vanuit verschillende perspectieven.
+*Wat:* Drie beelden: context, interactie en detail. Losse JPG/PNG én verwerkt in het document.
+*Klaar als:* Drie beelden van goede kwaliteit, als losse bestanden en in de projectbeschrijving.
+
+*Voorstel subtaken:*
+- *Shotlist:* context / interactie / detail
+- Foto's of screenshots maken (toestemming bij mensen in beeld)
+- Selecteren + bewerken
+
+*Geblokkeerd door:* S3-20 (Prototypes eindversie: zip + instructiedocument + overdracht)
+*Blokkeert:* S3-25 (Onderzoeksposter (A0/A1)); S3-28 (Eind-pakket inleveren + afsluiten)",4,2,High,del-beelden,beeld,et3-communicatie,,,,,,,15/Jan/27 12:00 AM,To Do,320,,,,,
+324,Task,Video walkthrough (1–3 minuten),"*Waarom:* Deliverable: korte video met uitleg van het concept en een demonstratie van de interactie.
+*Wat:* Script, opnames, montage; MP4 of werkende link.
+*Klaar als:* De video is 1–3 minuten, goed verstaanbaar, en klaar vóór de eind-stakeholderbijeenkomst.
+
+*Voorstel subtaken:*
+- Script + storyboard
+- Opnames (demo + gebruikssituatie)
+- Monteren + ondertitels
+- Feedback vragen + bijwerken
+
+*Geblokkeerd door:* S3-20 (Prototypes eindversie: zip + instructiedocument + overdracht)
+*Blokkeert:* S3-26 (Eind-stakeholderbijeenkomst (week 3)); S3-28 (Eind-pakket inleveren + afsluiten)",4,5,High,del-video,beeld,et3-communicatie,,,,,,,19/Jan/27 12:00 AM,To Do,320,,,,,
+325,Task,Onderzoeksposter (A0/A1),"*Waarom:* Deliverable: visuele poster voor kennisdeling binnen het lectoraat en een breed publiek.
+*Wat:* Titel, context en probleem, onderzoeksvraag, inzichten, ontwerpkeuzes, oplossing, visuals.
+*Klaar als:* De poster is als PDF in hoge resolutie klaar en gedrukt (A0 of A1).
+
+*Voorstel subtaken:*
+- Opzet + visuele hiërarchie
+- Teksten (uit hoofdvraag + DR)
+- *Visuals:* proces en eindresultaat
+- Feedback vragen + drukken
+
+*Geblokkeerd door:* S3-21 (Hoofdvraag beantwoorden + advies aan de opdrachtgever); S3-23 (Visuele representatie: 3 afbeeldingen)
+*Blokkeert:* S3-28 (Eind-pakket inleveren + afsluiten)",4,5,High,del-poster,beeld,et3-communicatie,,,,,,,19/Jan/27 12:00 AM,To Do,321,323,,,,
+326,Task,Eind-stakeholderbijeenkomst (week 3),"*Waarom:* Afsluiting met de opdrachtgevers: we leveren op en dragen over.
+*Wat:* Presentatie volgens de stakeholder-indeling (t/m eindresultaat en aanbevelingen), live demo met achtervang.
+*Klaar als:* De presentatie is gegeven en de notulen staan in Teams.
+
+*Voorstel subtaken:*
+- *Presentatie:* opdracht > probleem > onderzoeksvraag > eisen > doelgroep > prototypes & tests > eindresultaat > aanbevelingen
+- Demo + achtervang (video)
+- Vragen voor de stakeholders
+- Notulen + feedback in het log
+
+*Geblokkeerd door:* S3-20 (Prototypes eindversie: zip + instructiedocument + overdracht); S3-21 (Hoofdvraag beantwoorden + advies aan de opdrachtgever); S3-24 (Video walkthrough (1–3 minuten))
+*Blokkeert:* S3-27 (Design Rationale eindversie + persoonlijke reflecties)",4,5,Highest,stakeholder,pr3,pr4,et3-communicatie,,,,,,21/Jan/27 12:00 AM,To Do,320,321,324,,,
+327,Task,Design Rationale eindversie + persoonlijke reflecties,"*Waarom:* De DR is de feedback- en stakeholderpresentatie als deliverable, met de individuele bijdragen gelabeld.
+*Wat:* DR afmaken t/m week 3; ieder een eigen reflectie; samen nalezen.
+*Klaar als:* De DR is compleet, elke slide heeft 'wie deed wat', en ieder heeft een reflectie.
+
+*Voorstel subtaken:*
+- Weekblokken wk 1–3 + sprintreview eindfase
+- Lege templates weg, alles op één stand
+- Persoonlijke reflectie (ieder)
+- Samen nalezen
+
+*Geblokkeerd door:* S3-17 (Design Rationale + logs bijhouden (DS3, incl. sprintreview)); S3-26 (Eind-stakeholderbijeenkomst (week 3)); S3-30 (Nieuwe technologie toepassen: iedereen laat het zien)
+*Blokkeert:* S3-28 (Eind-pakket inleveren + afsluiten)",4,5,Highest,del-designrationale,individueel,pr1,pr4,,,,,,22/Jan/27 12:00 AM,To Do,317,326,330,,,
+328,Task,Eind-pakket inleveren + afsluiten,"*Waarom:* Alles moet compleet en op tijd binnen zijn, en Teams moet overzichtelijk zijn voor de opdrachtgever.
+*Wat:* Checklist deliverables, inleveren, laatste retro, Teams en Jira opruimen.
+*Klaar als:* Alle zes deliverables zijn ingeleverd en Teams is opgeruimd.
+
+*Voorstel subtaken:*
+- *Checklist:* projectbeschrijving, 3 beelden, video, prototype-zip + instructie, poster, DR
+- Inleveren
+- Laatste retro
+- Teams + Jira opruimen, oude versies naar archief
+
+*Geblokkeerd door:* S3-20 (Prototypes eindversie: zip + instructiedocument + overdracht); S3-22 (Projectbeschrijving (300–500 woorden)); S3-23 (Visuele representatie: 3 afbeeldingen); S3-24 (Video walkthrough (1–3 minuten)); S3-25 (Onderzoeksposter (A0/A1)); S3-27 (Design Rationale eindversie + persoonlijke reflecties)",4,2,Highest,proces,,,,,,,,,29/Jan/27 12:00 AM,To Do,320,322,323,324,325,327
